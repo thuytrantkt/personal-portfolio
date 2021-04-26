@@ -1,0 +1,120 @@
+@include media-sm {
+    .home {
+        &__name {
+            font-size: 3rem;
+        }
+    }
+
+    .home h2,
+    .about,
+    .about__bio p,
+    .skills p,
+    .projects,
+    .contact__list {
+        font-size: 1.2rem;
+    }
+
+    .contact h2,
+    .text-secondary {
+        font-size: 2rem;
+    }
+}
+
+@include media-md {
+    .home {
+        padding-top: 35vh;
+
+        &__name {
+            padding-bottom: 1.5rem;
+            font-size: 3.5rem;
+        }
+    }
+
+    .home h2,
+    .nav__link,
+    .about p,
+    .projects__btn {
+        font-size: 1.5rem;
+    }
+
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    .nav {
+        visibility: visible;
+
+        .menu-nav {
+            display: block;
+            height: 100%;
+            background: $primary-color;
+            text-align: right;
+            transform: translateY(0);
+
+            &__item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &__link:hover,
+            &__link:focus {
+                border: none;
+            }
+        }
+    }
+
+    .about {
+        padding-top: 20vh;
+    }
+
+    .text-secondary {
+        font-size: 2rem;
+    }
+
+    .projects {
+        padding-top: 20vh;
+
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@include media-xl {
+    .projects {
+        &__items {
+            grid-gap: 3.5rem;
+        }
+    }
+
+    .projects__btn {
+        font-size: 2rem;
+    }
+}
+
+@include touch-screen {
+    .projects {
+        &__item {
+            position: initial;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &__btns {
+            position: initial;
+            align-items: center;
+            padding-top: 1rem;
+        }
+
+        &__btn {
+            opacity: 1;
+            color: set-text-color($secondary-color);
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}

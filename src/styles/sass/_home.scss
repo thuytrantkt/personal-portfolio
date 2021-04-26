@@ -1,0 +1,25 @@
+.home {
+    height: 100vh;
+    padding-top: 25vh;
+    background: linear-gradient(to bottom, rgba($primary-color, 0.45)),
+        url(http://1.bp.blogspot.com/-51dL74QTW0s/Ucx5qyYlBAI/AAAAAAAAWgk/IT7vwn51zHU/s1280/Sunflowers+Desktop+Wallpapers+%25282%2529.jpg)
+            center top;
+    background-size: cover;
+    text-align: center;
+
+    &__name {
+        padding-bottom: 1rem;
+        text-decoration: underline;
+        font-size: 2.5rem;
+    }
+
+    &__name--first {
+        color: lighten($secondary-color, 25%);
+        font-weight: bold;
+    }
+
+    h2 {
+        text-transform: capitalize;
+        font-size: 1rem;
+    }
+}

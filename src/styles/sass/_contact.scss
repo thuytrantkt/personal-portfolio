@@ -1,0 +1,51 @@
+.contact {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    height: 100%;
+    padding-top: 15vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgba($primary-color, 0.7)),
+        url(http://1.bp.blogspot.com/-51dL74QTW0s/Ucx5qyYlBAI/AAAAAAAAWgk/IT7vwn51zHU/s1280/Sunflowers+Desktop+Wallpapers+%25282%2529.jpg)
+            center top;
+    background-size: cover;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 2rem;
+        padding: 1rem 2rem;
+        border: 5px solid $secondary-color;
+        border-radius: 0.4rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .text-secondary {
+        padding-top: 0.5rem;
+    }
+
+    .text-secondary > a {
+        color: $secondary-color;
+    }
+
+    .social-icons {
+        margin: 40px 0;
+    }
+
+    .social-icons a {
+        padding: 0 20px;
+    }
+
+    .social-icons a:hover,
+    .social-icons a:focus {
+        color: $secondary-color;
+    }
+}

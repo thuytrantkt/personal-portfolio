@@ -1,0 +1,78 @@
+.projects {
+    padding: 40px 0;
+    font-size: 0.7rem;
+    text-align: center;
+
+    .text-secondary {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3rem 4rem;
+        margin: 2rem auto 0 auto;
+    }
+
+    &__item {
+        position: relative;
+        background: lighten($primary-color, 10%);
+        padding: 0.7rem 1rem;
+        border-bottom: 5px solid lighten($secondary-color, 40%);
+        border-radius: 0.4rem;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    &__item h4 {
+        padding: 10px 0 20px 0;
+    }
+
+    &__item::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: darken($secondary-color, 20%);
+        opacity: 0;
+        @include transition-ease;
+    }
+
+    &__item:hover,
+    &__item:focus {
+        &::after {
+            top: 0;
+            opacity: 0.9;
+        }
+        .projects__btn {
+            opacity: 1;
+        }
+    }
+
+    &__btns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        text-align: center;
+    }
+
+    &__btn {
+        font-size: 1rem;
+        opacity: 0;
+        color: set-text-color($secondary-color);
+        @include transition-ease;
+
+        &:hover {
+            color: set-text-color(set-text-color($secondary-color));
+        }
+    }
+}

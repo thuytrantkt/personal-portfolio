@@ -1,0 +1,72 @@
+.about {
+    padding: 40px 0;
+    font-size: 0.7rem;
+
+    &__bio {
+        text-align: center;
+
+        .text-secondary {
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    }
+
+    .skills {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: auto;
+        gap: 30px;
+        padding: 50px;
+    }
+
+    .skill-item i,
+    .skill-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skill-item i {
+        font-size: 3rem;
+        color: #2664c2;
+    }
+
+    .skill-item p {
+        padding: 10px 0;
+    }
+
+    .jobs {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+
+        &__container {
+            background: lighten($primary-color, 10%);
+            padding: 0.7rem 1rem;
+            border-bottom: 5px solid lighten($secondary-color, 40%);
+            border-radius: 0.4rem;
+
+            h2,
+            h3 {
+                margin: 0.6rem 0;
+            }
+
+            h4 {
+                margin: 0.4rem 0;
+            }
+        }
+
+        &__description {
+            margin-left: 1rem;
+
+            &-item {
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
