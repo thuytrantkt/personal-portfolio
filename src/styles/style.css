@@ -342,7 +342,7 @@ footer {
 }
 
 .about {
-  padding: 40px 10px;
+  padding: 30px 10px;
   font-size: 0.8rem;
 }
 
@@ -439,7 +439,8 @@ footer {
   cursor: pointer;
 }
 
-.projects__item h4 {
+.projects__item h4,
+.projects__item h5 {
   padding: 10px 0 20px 0;
 }
 
@@ -650,6 +651,9 @@ footer {
   .about {
     padding-top: 10vh;
   }
+  .about .jobs {
+    padding: 50px 0 0 0;
+  }
   .about .skills-container {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -698,9 +702,11 @@ footer {
   .contact-form {
     margin: 40px;
   }
-  .contact .text-secondary,
-  .contact .social-icons {
+  .contact .text-secondary {
     font-size: 1rem;
+  }
+  .contact .social-icons {
+    font-size: 0.8rem;
   }
 }
 

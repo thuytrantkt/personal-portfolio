@@ -60,10 +60,14 @@
 
     .about {
         padding-top: 10vh;
-    }
 
-    .about .skills-container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .jobs {
+            padding: 50px 0 0 0;
+        }
+
+        .skills-container {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
     }
 
     .projects {
@@ -111,9 +115,12 @@
     }
 
     .contact {
-        .text-secondary,
-        .social-icons {
+        .text-secondary {
             font-size: 1rem;
+        }
+
+        .social-icons {
+            font-size: 0.8rem;
         }
     }
 }

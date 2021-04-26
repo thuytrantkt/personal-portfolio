@@ -37,7 +37,7 @@ skills.forEach((skill) => {
     const skillsElem = document.querySelector(".skills-container");
     const skillsHtml = `
     <div class="skill-item">
-        <div><i class="${skill.icon}"></i></div>
+        <div aria-label="${skill.name} icon"><i class="${skill.icon}" aria-hidden></i></div>
         <p>${skill.name}</p>
     </div>
     `;
@@ -81,7 +81,8 @@ projects.forEach((project) => {
             src=${project.imgPath}
             alt=${project.title}
         />
-        <h4>${project.description}</h4>
+        <h4>${project.title}</h4>
+        <h5>${project.description}</h5>
         <h5>Technology: ${project.technologies}</h5>
         <div class="projects__btns">
             <a
