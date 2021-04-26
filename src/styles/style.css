@@ -1,4 +1,5 @@
 html {
+  font-size: 125%;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -7,15 +8,14 @@ html {
 footer,
 header,
 nav,
-section {
-  display: block;
-}
-
+section,
 main {
   display: block;
 }
 
 a {
+  color: #ffffff;
+  text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -23,10 +23,6 @@ a {
 img {
   max-width: 100%;
   border-style: none;
-}
-
-svg:not(:root) {
-  overflow: hidden;
 }
 
 button,
@@ -156,11 +152,6 @@ h2 {
   text-transform: uppercase;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
 .text-secondary {
   color: #ddce00;
 }
@@ -197,7 +188,7 @@ footer {
 .home__name {
   padding-bottom: 1rem;
   text-decoration: underline;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .home__name--first {
@@ -222,37 +213,30 @@ footer {
   transition: all 0.5s ease-in-out;
 }
 
-.menu-btn__burger {
+.menu-btn__burger, .menu-btn__burger::before, .menu-btn__burger::after {
   position: absolute;
-  right: 0;
-  top: 0.5rem;
   width: 28px;
   height: 3px;
   background: #ffffff;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger {
+  right: 0;
+  top: 0.5rem;
+}
+
+.menu-btn__burger::before, .menu-btn__burger::after {
+  content: "";
 }
 
 .menu-btn__burger::before {
-  content: "";
-  position: absolute;
   top: -8px;
-  width: 28px;
-  height: 3px;
-  background: #ffffff;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger::after {
-  content: "";
-  position: absolute;
   top: 8px;
-  width: 28px;
-  height: 3px;
-  background: #ffffff;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger.open {
@@ -333,7 +317,7 @@ footer {
 .nav .menu-nav__link {
   display: inline-block;
   padding: 2rem 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 700;
   -webkit-transition: all 0.5s ease-in-out;
@@ -369,33 +353,34 @@ footer {
 }
 
 .about {
-  padding: 40px 0;
-  font-size: 0.7rem;
+  padding: 40px 10px;
+  font-size: 0.8rem;
 }
 
-.about__bio {
+.about .text-secondary {
+  padding-bottom: 30px;
+  font-weight: 700;
   text-align: center;
 }
 
-.about__bio .text-secondary {
-  padding-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
+.about__bio,
+.about .skills,
+.about .jobs {
+  padding: 50px 0;
 }
 
+.about__bio,
 .about .skills {
-  padding: 50px 0;
   text-align: center;
 }
 
 .about .skills-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: auto;
-  gap: 30px;
-  padding: 50px;
+  grid-gap: 10px;
 }
 
 .about .skill-item i,
@@ -405,7 +390,7 @@ footer {
 }
 
 .about .skill-item i {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #2664c2;
 }
 
@@ -418,31 +403,29 @@ footer {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 2rem;
 }
 
 .about .jobs__container {
   background: #414141;
   padding: 0.7rem 1rem;
+  margin-bottom: 40px;
   border-bottom: 5px solid #fff9aa;
   border-radius: 0.4rem;
+  line-height: 1.45;
 }
 
-.about .jobs__container h2,
 .about .jobs__container h3 {
-  margin: 0.6rem 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
-.about .jobs__container h4 {
-  margin: 0.4rem 0;
+.about .jobs__container h4,
+.about .jobs__container h5 {
+  font-style: italic;
 }
 
 .about .jobs__description {
   margin-left: 1rem;
-}
-
-.about .jobs__description-item {
-  line-height: 1.5rem;
 }
 
 .projects {
@@ -592,7 +575,7 @@ footer {
 
 @media screen and (min-width: 434px) {
   .home__name {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .home h2,
   .about,
@@ -614,10 +597,9 @@ footer {
   }
   .home__name {
     padding-bottom: 1.5rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .home h2,
-  .nav__link,
   .about p,
   .projects__btn {
     font-size: 1.5rem;

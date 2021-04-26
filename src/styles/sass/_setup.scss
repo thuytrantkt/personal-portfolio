@@ -1,5 +1,6 @@
 // Setup styling
 html {
+    font-size: 125%;
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -8,15 +9,14 @@ html {
 footer,
 header,
 nav,
-section {
-    display: block;
-}
-
+section,
 main {
     display: block;
 }
 
 a {
+    color: set-text-color($primary-color);
+    text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
@@ -24,10 +24,6 @@ a {
 img {
     max-width: 100%;
     border-style: none;
-}
-
-svg:not(:root) {
-    overflow: hidden;
 }
 
 button,
@@ -132,6 +128,7 @@ textarea {
     overflow: hidden;
 }
 
+// General styling
 body {
     background-color: $primary-color;
     height: 100vh;
@@ -148,11 +145,6 @@ h3 {
 
 h2 {
     text-transform: uppercase;
-}
-
-a {
-    color: set-text-color($primary-color);
-    text-decoration: none;
 }
 
 .text-secondary {

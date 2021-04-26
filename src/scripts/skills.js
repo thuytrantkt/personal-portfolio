@@ -40,8 +40,4 @@ export const skills = [
         icon: "fas fa-cloud-download-alt",
         name: "Restful API",
     },
-    {
-        icon: "fas fa-database",
-        name: "Firebase",
-    },
 ];

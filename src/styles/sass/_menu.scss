@@ -8,46 +8,42 @@
     cursor: pointer;
     @include transition-ease;
 
-    &__burger {
+    &__burger,
+    &__burger::before,
+    &__burger::after {
         position: absolute;
-        right: 0;
-        top: 0.5rem;
         width: 28px;
         height: 3px;
         background: set-text-color($primary-color);
         @include transition-ease;
+    }
 
+    &__burger {
+        right: 0;
+        top: 0.5rem;
+    }
+
+    &__burger::before,
+    &__burger::after {
+        content: "";
+    }
+
+    &__burger::before {
+        top: -8px;
+    }
+    &__burger::after {
+        top: 8px;
+    }
+
+    &__burger.open {
+        transform: rotate(720deg);
+        background: transparent;
         &::before {
-            content: "";
-            position: absolute;
-            top: -8px;
-            width: 28px;
-            height: 3px;
-            background: set-text-color($primary-color);
-            @include transition-ease;
+            transform: rotate(45deg) translate(5px, 8px);
         }
 
         &::after {
-            content: "";
-            position: absolute;
-            top: 8px;
-            width: 28px;
-            height: 3px;
-            background: set-text-color($primary-color);
-            @include transition-ease;
-        }
-
-        &.open {
-            transform: rotate(720deg);
-            background: transparent;
-
-            &::before {
-                transform: rotate(45deg) translate(5px, 8px);
-            }
-
-            &::after {
-                transform: rotate(-45deg) translate(3px, -7px);
-            }
+            transform: rotate(-45deg) translate(3px, -7px);
         }
     }
 }
@@ -80,34 +76,34 @@
         &.open {
             transform: translateY(0);
         }
+    }
 
-        &__item {
-            transform: translateX(100vw);
-            @include transition-ease;
+    .menu-nav__item {
+        transform: translateX(100vw);
+        @include transition-ease;
 
-            &.open {
-                transform: translateX(0);
-            }
-
-            &.active > a {
-                color: $secondary-color;
-            }
+        &.open {
+            transform: translateX(0);
         }
 
-        &__link {
-            display: inline-block;
-            padding: 2rem 0;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            font-weight: 700;
-            @include transition-ease;
+        &.active > a {
+            color: $secondary-color;
+        }
+    }
 
-            &:hover {
-                padding: 2rem 3rem;
-                border: 1px solid $secondary-color;
-                border-radius: 0.4rem;
-                @include transition-ease;
-            }
+    .menu-nav__link {
+        display: inline-block;
+        padding: 2rem 0;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        @include transition-ease;
+
+        &:hover {
+            padding: 2rem 3rem;
+            border: 1px solid $secondary-color;
+            border-radius: 0.4rem;
+            @include transition-ease;
         }
     }
 }

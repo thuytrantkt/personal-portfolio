@@ -49,9 +49,9 @@ jobs.forEach((job) => {
     const jobElem = document.querySelector(".jobs");
     let jobHtml = `
     <div class="jobs__container">
-    <h2>${job.title}</h2>
-    <h3>${job.company}</h3>
-    <h4>${job.date}</h4>
+    <h3>${job.title}</h3>
+    <h4>${job.company}</h4>
+    <h5>${job.date}</h5>
     <ul class="jobs__description">
     `;
 

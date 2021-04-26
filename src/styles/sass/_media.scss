@@ -1,7 +1,7 @@
 @include media-sm {
     .home {
         &__name {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
     }
 
@@ -26,12 +26,11 @@
 
         &__name {
             padding-bottom: 1.5rem;
-            font-size: 3.5rem;
+            font-size: 3rem;
         }
     }
 
     .home h2,
-    .nav__link,
     .about p,
     .projects__btn {
         font-size: 1.5rem;
