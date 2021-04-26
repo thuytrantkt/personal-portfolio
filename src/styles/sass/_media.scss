@@ -5,18 +5,17 @@
         }
     }
 
-    .home h2,
-    .about,
-    .about__bio p,
-    .skills p,
-    .projects,
-    .contact__list {
+    .home h2 {
         font-size: 1.2rem;
     }
 
-    .contact h2,
-    .text-secondary {
-        font-size: 2rem;
+    .about,
+    .projects {
+        font-size: 1rem;
+    }
+
+    .about .jobs__container h3 {
+        font-size: 1.2rem;
     }
 }
 
@@ -26,13 +25,10 @@
 
         &__name {
             padding-bottom: 1.5rem;
-            font-size: 3rem;
         }
     }
 
-    .home h2,
-    .about p,
-    .projects__btn {
+    .home h2 {
         font-size: 1.5rem;
     }
 
@@ -63,31 +59,68 @@
     }
 
     .about {
-        padding-top: 20vh;
+        padding-top: 10vh;
     }
 
-    .text-secondary {
-        font-size: 2rem;
+    .about .skills-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .projects {
         padding-top: 20vh;
+    }
 
-        &__items {
-            grid-template-columns: 1fr 1fr;
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+    .contact-form {
+        margin: 20px;
+        flex: 1 1 800px;
+    }
+
+    .contact {
+        &__list {
+            grid-gap: 1rem;
+        }
+
+        .text-secondary {
+            font-size: 0.9rem;
+        }
+        .social-icons {
+            font-size: 0.6rem;
+        }
+
+        .social-icons a {
+            padding: 0 10px;
+        }
+    }
+}
+
+@include media-lg {
+    .projects__items {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+    .contact-form {
+        margin: 40px;
+    }
+
+    .contact {
+        .text-secondary,
+        .social-icons {
+            font-size: 1rem;
         }
     }
 }
 
 @include media-xl {
-    .projects {
-        &__items {
-            grid-gap: 3.5rem;
-        }
-    }
-
-    .projects__btn {
-        font-size: 2rem;
+    .projects__items {
+        grid-gap: 100px;
     }
 }
 
@@ -109,9 +142,11 @@
 
         &__btn {
             opacity: 1;
-            color: set-text-color($secondary-color);
+            color: #fff;
+            padding: 0 10px;
 
-            &:hover {
+            &:hover,
+            &:focus {
                 color: $secondary-color;
             }
         }

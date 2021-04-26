@@ -85,10 +85,6 @@
         &.open {
             transform: translateX(0);
         }
-
-        &.active > a {
-            color: $secondary-color;
-        }
     }
 
     .menu-nav__link {
@@ -99,8 +95,9 @@
         font-weight: 700;
         @include transition-ease;
 
-        &:hover {
-            padding: 2rem 3rem;
+        &:hover,
+        &:focus {
+            color: $secondary-color;
             border: 1px solid $secondary-color;
             border-radius: 0.4rem;
             @include transition-ease;

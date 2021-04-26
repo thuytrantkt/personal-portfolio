@@ -89,14 +89,14 @@ projects.forEach((project) => {
                 class="projects__btn"
                 aria-label="Go to the live site of the project"
             >
-                <i class="fas fa-eye" aria-hidden></i> Preview
+                <i class="fas fa-eye" aria-hidden></i> Live
             </a>
             <a
                 href=${project.githubUrl}
                 class="projects__btn"
                 aria-label="Go to the GitHub repository to view the codes of the project"
             >
-                <i class="fab fa-github" aria-hidden></i> Github
+                <i class="fab fa-github" aria-hidden></i> View Code
             </a>
         </div>
     </div>

@@ -6,6 +6,11 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="./styles/style.css" />
         <title>Christie Tran | Portfolio</title>
+        <script
+            src="https://www.google.com/recaptcha/api.js"
+            async
+            defer
+        ></script>
         <script src="https://kit.fontawesome.com/6d2ea823d0.js"></script>
         <script defer type="module" src="./scripts/script.js"></script>
     </head>
@@ -114,38 +119,102 @@
             <!-- Contact section starts here -->
             <section class="contact" id="contact">
                 <h2>contact me</h2>
-                <div class="contact__list">
-                    <div class="contact__email">
-                        <i class="fas fa-envelope"></i> Email
-                        <div class="text-secondary">
-                            <a href="mailto:christiesunnie@gmail.com"
-                                >christiesunnie@gmail.com</a
-                            >
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact__list">
+                            <div class="contact__email">
+                                <i class="fas fa-envelope"></i> Email
+                                <div class="text-secondary">
+                                    <a href="mailto:christiesunnie@gmail.com"
+                                        >christiesunnie@gmail.com</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="contact__phone">
+                                <i class="fas fa-mobile-alt"></i> Phone
+                                <div class="text-secondary">
+                                    +1 (416) 882-3434
+                                </div>
+                            </div>
+                            <div class="contact__address">
+                                <i class="fas fa-map-marker"></i> Location
+                                <div class="text-secondary">
+                                    Toronto, Ontario
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact__phone">
-                        <i class="fas fa-mobile-alt"></i> Phone
-                        <div class="text-secondary">+1 (416) 882-3434</div>
-                    </div>
-                    <div class="contact__address">
-                        <i class="fas fa-map-marker"></i> Location
-                        <div class="text-secondary">Toronto, Ontario</div>
-                    </div>
-                </div>
 
-                <div class="social-icons">
-                    <a href="https://twitter.com/christiesunnie">
-                        <i class="fab fa-twitter fa-2x"></i>
-                    </a>
-                    <a href="https://www.instagram.com/christiesunnie/">
-                        <i class="fab fa-instagram fa-2x"></i>
-                    </a>
-                    <a href="https://github.com/christiesunnie">
-                        <i class="fab fa-github fa-2x"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/christiesunnie/">
-                        <i class="fab fa-linkedin fa-2x"></i>
-                    </a>
+                        <div class="social-icons">
+                            <a href="https://twitter.com/christiesunnie">
+                                <i class="fab fa-twitter fa-2x"></i>
+                            </a>
+                            <a href="https://www.instagram.com/christiesunnie/">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                            <a href="https://github.com/christiesunnie">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/christiesunnie/"
+                            >
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                        </div>
+                        <p>
+                            Send me the message if you are interested in my
+                            works!
+                        </p>
+                    </div>
+
+                    <form
+                        action="https://formspree.io/f/xeqvejgj"
+                        method="post"
+                        class="contact-form"
+                    >
+                        <label
+                            for="email"
+                            aria-label="User Email Address"
+                            class="sr-only"
+                            >Your Email</label
+                        >
+                        <input
+                            name="Email"
+                            id="email"
+                            type="email"
+                            placeholder="Your Email"
+                            required
+                        />
+                        <label for="name" aria-label="User Name" class="sr-only"
+                            >Your Name</label
+                        >
+                        <input
+                            name="name"
+                            id="name"
+                            type="text"
+                            placeholder="Your Name"
+                            required
+                        />
+                        <label
+                            for="message"
+                            aria-label="User Message"
+                            class="sr-only"
+                            >Your Name</label
+                        >
+                        <textarea
+                            name="message"
+                            id="message"
+                            placeholder="Type your message here..."
+                            rows="10"
+                            required
+                        ></textarea>
+                        <div
+                            class="g-recaptcha"
+                            data-sitekey="6LdDgroaAAAAACuoHTSLnaMf436rwfTW3d2cXEiG"
+                        ></div>
+                        <button type="submit" class="submmit-btn">
+                            Submit
+                        </button>
+                    </form>
                 </div>
             </section>
         </main>

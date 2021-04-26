@@ -2,9 +2,7 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    height: 100%;
-    padding-top: 15vh;
-    overflow: hidden;
+    padding-top: 25vh;
     background: linear-gradient(to bottom, rgba($primary-color, 0.7)),
         url(http://1.bp.blogspot.com/-51dL74QTW0s/Ucx5qyYlBAI/AAAAAAAAWgk/IT7vwn51zHU/s1280/Sunflowers+Desktop+Wallpapers+%25282%2529.jpg)
             center top;
@@ -16,28 +14,25 @@
         padding: 1rem 2rem;
         border: 5px solid $secondary-color;
         border-radius: 0.4rem;
-        font-size: 2rem;
-        font-weight: 700;
     }
 
     &__list {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2rem;
-        font-size: 1rem;
-        font-weight: 700;
+    }
+
+    .text-secondary a {
+        color: $secondary-color;
     }
 
     .text-secondary {
-        padding-top: 0.5rem;
-    }
-
-    .text-secondary > a {
-        color: $secondary-color;
+        padding: 10px 0;
     }
 
     .social-icons {
         margin: 40px 0;
+        font-size: 0.8rem;
     }
 
     .social-icons a {
@@ -48,4 +43,51 @@
     .social-icons a:focus {
         color: $secondary-color;
     }
+}
+
+.contact-form {
+    display: flex;
+    max-width: 95vw;
+    margin: 30px auto;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-form p {
+    padding-bottom: 50px;
+    color: #000;
+}
+
+.contact-form input,
+.contact-form textarea,
+.submmit-btn {
+    max-width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: 5px solid $secondary-color;
+}
+
+.submmit-btn {
+    background-color: #2664c2;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submmit-btn:hover,
+.submmit-btn:focus {
+    background-color: $secondary-color;
+    color: #000;
+}
+
+.g-recaptcha {
+    padding: 10px 0;
 }
