@@ -1,6 +1,6 @@
 export const projects = [
     {
-        imgPath: "./images/road-radar-app.png",
+        imgPath: "src/images/road-radar-app.png",
         title: "Road Radar App",
         siteUrl: "https://christie-tran-paulo-wu-project-three.netlify.app/",
         githubUrl:
@@ -10,7 +10,7 @@ export const projects = [
         technologies: "React | Hook | REST API  | CSS3",
     },
     {
-        imgPath: "./images/summer-movies-react-app.png",
+        imgPath: "src/images/summer-movies-react-app.png",
         title: "Summer Movies React App",
         siteUrl: "https://compassionate-gates-9c348a.netlify.app/",
         githubUrl: "https://github.com/Juno-project-4/box-office-boffo",
@@ -19,7 +19,7 @@ export const projects = [
         technologies: "React | Hook | Firebase | REST API  | CSS3 ",
     },
     {
-        imgPath: "./images/go-fetch-app.png",
+        imgPath: "src/images/go-fetch-app.png",
         title: "Go Fetch App",
         siteUrl: "https://go-fetch-app.github.io/go-fetch-app/",
         githubUrl: "https://github.com/go-fetch-app/go-fetch-app",
@@ -28,7 +28,7 @@ export const projects = [
         technologies: "JavaScript | REST API | HTML5 | SASS",
     },
     {
-        imgPath: "./images/pokemon-game-app.png",
+        imgPath: "src/images/pokemon-game-app.png",
         title: "Pokemon Matching Card Game",
         siteUrl: "https://christiesunnie.github.io/pokemon-match-game-app/",
         githubUrl: "https://github.com/christiesunnie/pokemon-match-game-app",
@@ -37,7 +37,7 @@ export const projects = [
         technologies: "jQuery | HTML5 | CSS3",
     },
     {
-        imgPath: "./images/hero-villain-app.png",
+        imgPath: "src/images/hero-villain-app.png",
         title: "Heroes vs Villians App",
         siteUrl: "https://christiesunnie.github.io/heroes-vs-villains-app/",
         githubUrl: "https://github.com/christiesunnie/heroes-vs-villains-app",
@@ -46,7 +46,7 @@ export const projects = [
         technologies: "jQuery | REST API | HTML5 | CSS3",
     },
     {
-        imgPath: "./images/riding-motorcycle-page.png",
+        imgPath: "src/images/riding-motorcycle-page.png",
         title: "Riding motorbike page",
         siteUrl:
             "https://christiesunnie.github.io/riding-motorbike-page-project/",
