@@ -59,10 +59,10 @@
     }
 
     .about {
-        padding-top: 10vh;
+        padding-top: 20vh;
 
         .jobs {
-            padding: 50px 0 0 0;
+            padding: 60px 0 0 0;
         }
 
         .skills-container {
@@ -101,6 +101,10 @@
         .social-icons a {
             padding: 0 10px;
         }
+    }
+
+    .about__container {
+        grid-template-columns: 1fr 1fr;
     }
 }
 

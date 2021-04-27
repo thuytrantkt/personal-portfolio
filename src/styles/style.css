@@ -164,6 +164,7 @@ header {
 }
 
 footer {
+  font-size: 0.8rem;
   padding: 1rem;
   color: #ffffff;
   text-align: center;
@@ -196,7 +197,7 @@ footer {
 
 .menu-btn {
   position: absolute;
-  z-index: 1;
+  z-index: 99;
   right: 1rem;
   top: 1rem;
   height: 20px;
@@ -351,13 +352,19 @@ footer {
   text-align: center;
 }
 
-.about__bio,
-.about .skills,
-.about .jobs {
-  padding: 50px 0;
+.about__bio {
+  padding: 50px 0 20px 0;
 }
 
-.about__bio,
+.about .skills,
+.about .jobs {
+  padding: 60px 0;
+}
+
+.about__bio p {
+  padding: 5px 0;
+}
+
 .about .skills {
   text-align: center;
 }
@@ -414,6 +421,83 @@ footer {
 
 .about .jobs__description {
   margin-left: 1rem;
+}
+
+.about__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  place-items: center;
+  border: 5px dashed #ddce00;
+  padding: 40px 20px;
+  margin-bottom: 60px;
+}
+
+.about__photo {
+  position: relative;
+  padding: 30px 0;
+}
+
+.about__photo::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  right: 10px;
+  width: 220px;
+  height: 374px;
+  background-color: #fff;
+  z-index: -2;
+}
+
+.triangle-container {
+  position: absolute;
+  left: -10%;
+  right: 40%;
+  bottom: 100%;
+}
+
+.first-triangle,
+.second-triangle,
+.third-triangle {
+  position: absolute;
+  background-color: #008000;
+  border-radius: 2px;
+}
+
+.first-triangle {
+  top: 25px;
+  left: 25px;
+  width: 5px;
+  height: 380px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  z-index: 1;
+}
+
+.second-triangle {
+  top: 60px;
+  left: 149px;
+  width: 5px;
+  height: 370px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  z-index: -99;
+}
+
+.third-triangle {
+  top: -69px;
+  left: 118px;
+  width: 5px;
+  height: 255px;
+  -webkit-transform: rotate(103deg);
+          transform: rotate(103deg);
+  z-index: 1;
+}
+
+.about__photo img {
+  max-width: 200px;
 }
 
 .projects {
@@ -649,10 +733,10 @@ footer {
     border: none;
   }
   .about {
-    padding-top: 10vh;
+    padding-top: 20vh;
   }
   .about .jobs {
-    padding: 50px 0 0 0;
+    padding: 60px 0 0 0;
   }
   .about .skills-container {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -690,6 +774,10 @@ footer {
   }
   .contact .social-icons a {
     padding: 0 10px;
+  }
+  .about__container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
