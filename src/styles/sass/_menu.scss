@@ -8,9 +8,9 @@
     cursor: pointer;
     @include transition-ease;
 
-    &__burger,
-    &__burger::before,
-    &__burger::after {
+    &-burger,
+    &-burger::before,
+    &-burger::after {
         position: absolute;
         width: 28px;
         height: 3px;
@@ -18,24 +18,24 @@
         @include transition-ease;
     }
 
-    &__burger {
+    &-burger {
         right: 0;
         top: 0.5rem;
     }
 
-    &__burger::before,
-    &__burger::after {
+    &-burger::before,
+    &-burger::after {
         content: "";
     }
 
-    &__burger::before {
+    &-burger::before {
         top: -8px;
     }
-    &__burger::after {
+    &-burger::after {
         top: 8px;
     }
 
-    &__burger.open {
+    &-burger.open {
         transform: rotate(720deg);
         background: transparent;
         &::before {
@@ -78,7 +78,7 @@
         }
     }
 
-    .menu-nav__item {
+    .menu-nav-item {
         transform: translateX(100vw);
         @include transition-ease;
 
@@ -87,7 +87,7 @@
         }
     }
 
-    .menu-nav__link {
+    .menu-nav-link {
         display: inline-block;
         padding: 2rem 0;
         font-size: 1.2rem;
@@ -106,7 +106,7 @@
 }
 
 @for $i from 1 through 4 {
-    .menu-nav__item:nth-child(#{$i}) {
+    .menu-nav-item:nth-child(#{$i}) {
         transition-delay: ($i * 0.1s) + 0.1s;
     }
 }

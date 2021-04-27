@@ -2,18 +2,18 @@
     height: 100vh;
     padding-top: 25vh;
     background: linear-gradient(to bottom, rgba($primary-color, 0.45)),
-        url(http://1.bp.blogspot.com/-51dL74QTW0s/Ucx5qyYlBAI/AAAAAAAAWgk/IT7vwn51zHU/s1280/Sunflowers+Desktop+Wallpapers+%25282%2529.jpg)
+        url(https://1.bp.blogspot.com/-51dL74QTW0s/Ucx5qyYlBAI/AAAAAAAAWgk/IT7vwn51zHU/s1280/Sunflowers+Desktop+Wallpapers+%25282%2529.jpg)
             center top;
     background-size: cover;
     text-align: center;
 
-    &__name {
+    &-name {
         padding: 5px 0 20px 0;
         text-decoration: underline;
         font-size: 2rem;
     }
 
-    &__name--first {
+    &-name--first {
         color: lighten($secondary-color, 25%);
     }
 
@@ -23,15 +23,18 @@
     }
 }
 
-.button__down {
+.button-link {
     position: relative;
     top: 45vh;
+}
+
+.button-down {
     cursor: pointer;
     animation: bounce 1s infinite;
 }
 
-.button__down:hover,
-.button__down:focus {
+.button-down:hover,
+.button-down:focus {
     color: #000;
 }
 

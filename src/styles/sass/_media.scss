@@ -1,6 +1,6 @@
 @include media-sm {
     .home {
-        &__name {
+        &-name {
             font-size: 2.5rem;
         }
     }
@@ -14,8 +14,12 @@
         font-size: 1rem;
     }
 
-    .about .jobs__container h3 {
+    .about .jobs-container h3 {
         font-size: 1.2rem;
+    }
+
+    .button-up {
+        font-size: 3rem;
     }
 }
 
@@ -23,11 +27,11 @@
     .home {
         padding-top: 35vh;
 
-        &__name {
+        &-name {
             padding-bottom: 1.5rem;
         }
     }
-    .button__down {
+    .button-link {
         top: 35vh;
     }
 
@@ -49,13 +53,13 @@
             text-align: right;
             transform: translateY(0);
 
-            &__item {
+            &-item {
                 display: inline;
                 padding-right: 1.5rem;
             }
 
-            &__link:hover,
-            &__link:focus {
+            &-link:hover,
+            &-link:focus {
                 border: none;
             }
         }
@@ -90,7 +94,7 @@
     }
 
     .contact {
-        &__list {
+        &-list {
             grid-gap: 1rem;
         }
 
@@ -106,14 +110,14 @@
         }
     }
 
-    .about__container {
+    .about-container {
         grid-template-columns: 1fr 1fr;
         padding: 40px 70px;
     }
 }
 
 @include media-lg {
-    .projects__items {
+    .projects-items {
         grid-template-columns: 1fr 1fr;
         grid-gap: 50px;
     }
@@ -134,14 +138,14 @@
 }
 
 @include media-xl {
-    .projects__items {
+    .projects-items {
         grid-gap: 100px;
     }
 }
 
 @include touch-screen {
     .projects {
-        &__item {
+        &-item {
             position: initial;
 
             &::after {
@@ -149,13 +153,13 @@
             }
         }
 
-        &__btns {
+        &-btns {
             position: initial;
             align-items: center;
             padding-top: 1rem;
         }
 
-        &__btn {
+        &-btn {
             opacity: 1;
             color: #fff;
             padding: 0 10px;
