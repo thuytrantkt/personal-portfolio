@@ -49,6 +49,8 @@
     .jobs {
         display: grid;
         grid-template-columns: 1fr;
+        border: 5px dashed #008000;
+        padding: 40px 20px;
 
         &__container {
             background: lighten($primary-color, 10%);
@@ -101,22 +103,22 @@
     z-index: -2;
 }
 
-.triangle-container {
+.triangle__container {
     position: absolute;
     left: -10%;
     right: 40%;
     bottom: 100%;
 }
 
-.first-triangle,
-.second-triangle,
-.third-triangle {
+.first__triangle,
+.second__triangle,
+.third__triangle {
     position: absolute;
     background-color: #008000;
     border-radius: 2px;
 }
 
-.first-triangle {
+.first__triangle {
     top: 25px;
     left: 25px;
     width: 5px;
@@ -125,7 +127,7 @@
     z-index: 1;
 }
 
-.second-triangle {
+.second__triangle {
     top: 60px;
     left: 149px;
     width: 5px;
@@ -134,7 +136,7 @@
     z-index: -99;
 }
 
-.third-triangle {
+.third__triangle {
     top: -69px;
     left: 118px;
     width: 5px;
@@ -145,4 +147,20 @@
 
 .about__photo img {
     max-width: 200px;
+}
+
+.about__contact {
+    margin: 40px 0 0 0;
+}
+
+.about__contact a {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+}
+
+.about__contact a:hover,
+.about__contact a:focus {
+    background-color: $secondary-color;
 }

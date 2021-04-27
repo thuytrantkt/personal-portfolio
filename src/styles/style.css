@@ -181,7 +181,7 @@ footer {
 }
 
 .home__name {
-  padding-bottom: 1rem;
+  padding: 5px 0 20px 0;
   text-decoration: underline;
   font-size: 2rem;
 }
@@ -398,6 +398,8 @@ footer {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  border: 5px dashed #008000;
+  padding: 40px 20px;
 }
 
 .about .jobs__container {
@@ -451,22 +453,22 @@ footer {
   z-index: -2;
 }
 
-.triangle-container {
+.triangle__container {
   position: absolute;
   left: -10%;
   right: 40%;
   bottom: 100%;
 }
 
-.first-triangle,
-.second-triangle,
-.third-triangle {
+.first__triangle,
+.second__triangle,
+.third__triangle {
   position: absolute;
   background-color: #008000;
   border-radius: 2px;
 }
 
-.first-triangle {
+.first__triangle {
   top: 25px;
   left: 25px;
   width: 5px;
@@ -476,7 +478,7 @@ footer {
   z-index: 1;
 }
 
-.second-triangle {
+.second__triangle {
   top: 60px;
   left: 149px;
   width: 5px;
@@ -486,7 +488,7 @@ footer {
   z-index: -99;
 }
 
-.third-triangle {
+.third__triangle {
   top: -69px;
   left: 118px;
   width: 5px;
@@ -498,6 +500,22 @@ footer {
 
 .about__photo img {
   max-width: 200px;
+}
+
+.about__contact {
+  margin: 40px 0 0 0;
+}
+
+.about__contact a {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000;
+}
+
+.about__contact a:hover,
+.about__contact a:focus {
+  background-color: #ddce00;
 }
 
 .projects {
@@ -736,7 +754,7 @@ footer {
     padding-top: 20vh;
   }
   .about .jobs {
-    padding: 60px 0 0 0;
+    padding: 60px 60px 0 60px;
   }
   .about .skills-container {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -778,6 +796,7 @@ footer {
   .about__container {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    padding: 40px 70px;
   }
 }
 

@@ -62,7 +62,7 @@
         padding-top: 20vh;
 
         .jobs {
-            padding: 60px 0 0 0;
+            padding: 60px 60px 0 60px;
         }
 
         .skills-container {
@@ -105,6 +105,7 @@
 
     .about__container {
         grid-template-columns: 1fr 1fr;
+        padding: 40px 70px;
     }
 }
 
