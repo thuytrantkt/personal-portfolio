@@ -64,7 +64,7 @@
 
 .contact-form input,
 .contact-form textarea,
-.submmit-btn {
+.submit-btn {
     max-width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -76,14 +76,14 @@
     border: 5px solid $secondary-color;
 }
 
-.submmit-btn {
+.submit-btn {
     background-color: #2664c2;
     color: #fff;
     cursor: pointer;
 }
 
-.submmit-btn:hover,
-.submmit-btn:focus {
+.submit-btn:hover,
+.submit-btn:focus {
     background-color: $secondary-color;
     color: #000;
 }

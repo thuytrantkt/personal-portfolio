@@ -195,6 +195,49 @@ footer {
   font-size: 1rem;
 }
 
+.button__down {
+  position: relative;
+  top: 45vh;
+  cursor: pointer;
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
+
+.button__down:hover,
+.button__down:focus {
+  color: #000;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .menu-btn {
   position: absolute;
   z-index: 99;
@@ -356,8 +399,7 @@ footer {
   padding: 50px 0 20px 0;
 }
 
-.about .skills,
-.about .jobs {
+.about .skills {
   padding: 60px 0;
 }
 
@@ -399,7 +441,8 @@ footer {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   border: 5px dashed #008000;
-  padding: 40px 20px;
+  padding: 30px 20px;
+  margin: 40px 0;
 }
 
 .about .jobs__container {
@@ -675,7 +718,7 @@ footer {
 
 .contact-form input,
 .contact-form textarea,
-.submmit-btn {
+.submit-btn {
   max-width: 100%;
   padding: 10px;
   margin: 5px 0;
@@ -687,14 +730,14 @@ footer {
   border: 5px solid #ddce00;
 }
 
-.submmit-btn {
+.submit-btn {
   background-color: #2664c2;
   color: #fff;
   cursor: pointer;
 }
 
-.submmit-btn:hover,
-.submmit-btn:focus {
+.submit-btn:hover,
+.submit-btn:focus {
   background-color: #ddce00;
   color: #000;
 }
@@ -725,6 +768,9 @@ footer {
   }
   .home__name {
     padding-bottom: 1.5rem;
+  }
+  .button__down {
+    top: 35vh;
   }
   .home h2 {
     font-size: 1.5rem;
