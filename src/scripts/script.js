@@ -29,11 +29,10 @@ const toggleMenu = function () {
 menuBtn.addEventListener("click", toggleMenu);
 menuNav.addEventListener("click", toggleMenu);
 
-sumbitBtn.addEventListener("submit", (e) => {
+sumbitBtn.addEventListener("click", () => {
     const emailInput = document.getElementById("email");
     const nameInput = document.getElementById("name");
     const messageInput = document.getElementById("message");
-    e.preventDefault();
     emailInput.value = "";
     nameInput.value = "";
     messageInput.value = "";
