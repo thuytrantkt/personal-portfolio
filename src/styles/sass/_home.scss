@@ -23,9 +23,12 @@
     }
 }
 
-.button-down {
+.button-link {
     position: relative;
     top: 45vh;
+}
+
+.button-down {
     cursor: pointer;
     animation: bounce 1s infinite;
 }
