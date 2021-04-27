@@ -22,3 +22,29 @@
         font-size: 1rem;
     }
 }
+
+.button__down {
+    position: relative;
+    top: 45vh;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+}
+
+.button__down:hover,
+.button__down:focus {
+    color: #000;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
