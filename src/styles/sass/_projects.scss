@@ -16,6 +16,12 @@
         border-bottom: 5px solid lighten($secondary-color, 40%);
         border-radius: 0.4rem;
         cursor: pointer;
+        transition: transform 1s, opacity 1s;
+    }
+
+    &-item-hidden {
+        opacity: 0;
+        transform: translateY(8rem);
     }
 
     &-item h4,

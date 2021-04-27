@@ -35,16 +35,6 @@ const scrollUpEvent = () => {
 menuBtn.addEventListener("click", toggleMenu);
 menuNav.addEventListener("click", toggleMenu);
 
-// sumbitBtn.addEventListener("submit", (e) => {
-//     const emailInput = document.getElementById("email");
-//     const nameInput = document.getElementById("name");
-//     const messageInput = document.getElementById("message");
-//     e.preventDefault();
-//     emailInput.value = "";
-//     nameInput.value = "";
-//     messageInput.value = "";
-// });
-
 // Scroll to top of the page button
 scrollUpBtn.addEventListener("click", scrollUpEvent);
 
@@ -57,4 +47,27 @@ window.addEventListener("scroll", () => {
     } else {
         scrollUpBtn.style.visibility = "hidden";
     }
+});
+
+// Lazy loading project section effect
+const allProjects = document.querySelectorAll(".projects-item");
+
+const options = {
+    root: null,
+    rootMargin: "0px",
+    theshold: 0,
+};
+
+const showProject = (entries) => {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.remove("projects-item-hidden");
+    });
+};
+
+const projectObserver = new IntersectionObserver(showProject, options);
+
+allProjects.forEach((project) => {
+    projectObserver.observe(project);
+    project.classList.add("projects-item-hidden");
 });
