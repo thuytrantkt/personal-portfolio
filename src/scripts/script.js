@@ -79,7 +79,7 @@ projects.forEach((project) => {
     <div class="projects__item">
         <img
             src=${project.imgPath}
-            alt=${project.title}
+            alt="${project.title}"
         />
         <h4>${project.title}</h4>
         <h5>${project.description}</h5>

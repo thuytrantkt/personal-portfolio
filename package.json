@@ -1,0 +1,23 @@
+{
+    "name": "christie-tran-portfolio",
+    "version": "1.0.0",
+    "description": "christie-tran-portfolio",
+    "default": "index.html",
+    "scripts": {
+        "start": "parcel index.html",
+        "build": "parcel build index.html --dist-dir ./dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/christiesunnie/personal-portfolio.git"
+    },
+    "author": "Christie Tran",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/christiesunnie/personal-portfolio/issues"
+    },
+    "homepage": "https://github.com/christiesunnie/personal-portfolio#readme",
+    "devDependencies": {
+        "parcel": "^2.0.0-beta.2"
+    }
+}
