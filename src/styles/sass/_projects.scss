@@ -2,14 +2,14 @@
     font-size: 0.8rem;
     text-align: center;
 
-    &__items {
+    &-items {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 30px;
         padding: 40px 0;
     }
 
-    &__item {
+    &-item {
         position: relative;
         background: lighten($primary-color, 10%);
         padding: 0.7rem 1rem;
@@ -18,12 +18,12 @@
         cursor: pointer;
     }
 
-    &__item h4,
-    &__item h5 {
+    &-item h4,
+    &-item h5 {
         padding: 10px 0 20px 0;
     }
 
-    &__item::after {
+    &-item::after {
         content: "";
         position: absolute;
         top: 0;
@@ -35,17 +35,17 @@
         @include transition-ease;
     }
 
-    &__item:hover,
-    &__item:focus {
+    &-item:hover,
+    &-item:focus {
         &::after {
             opacity: 0.9;
         }
-        .projects__btn {
+        .projects-btn {
             opacity: 1;
         }
     }
 
-    &__btns {
+    &-btns {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -57,7 +57,7 @@
         text-align: center;
     }
 
-    &__btn {
+    &-btn {
         opacity: 0;
         color: set-text-color($secondary-color);
         @include transition-ease;

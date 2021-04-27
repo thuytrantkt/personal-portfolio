@@ -7,7 +7,7 @@
         text-align: center;
     }
 
-    &__bio {
+    &-bio {
         padding: 50px 0 20px 0;
     }
 
@@ -15,7 +15,7 @@
         padding: 60px 0;
     }
 
-    &__bio p {
+    &-bio p {
         padding: 5px 0;
     }
 
@@ -52,7 +52,7 @@
         padding: 30px 20px;
         margin: 40px 0;
 
-        &__container {
+        &-container {
             background: lighten($primary-color, 10%);
             padding: 0.7rem 1rem;
             margin-bottom: 40px;
@@ -71,13 +71,13 @@
             }
         }
 
-        &__description {
+        &-description {
             margin-left: 1rem;
         }
     }
 }
 
-.about__container {
+.about-container {
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
@@ -86,12 +86,12 @@
     margin-bottom: 60px;
 }
 
-.about__photo {
+.about-photo {
     position: relative;
     padding: 30px 0;
 }
 
-.about__photo::before {
+.about-photo::before {
     content: "";
     position: absolute;
     top: 10px;
@@ -103,22 +103,22 @@
     z-index: -2;
 }
 
-.triangle__container {
+.triangle-container {
     position: absolute;
     left: -10%;
     right: 40%;
     bottom: 100%;
 }
 
-.first__triangle,
-.second__triangle,
-.third__triangle {
+.first-triangle,
+.second-triangle,
+.third-triangle {
     position: absolute;
     background-color: #008000;
     border-radius: 2px;
 }
 
-.first__triangle {
+.first-triangle {
     top: 25px;
     left: 25px;
     width: 5px;
@@ -127,7 +127,7 @@
     z-index: 1;
 }
 
-.second__triangle {
+.second-triangle {
     top: 60px;
     left: 149px;
     width: 5px;
@@ -136,7 +136,7 @@
     z-index: -99;
 }
 
-.third__triangle {
+.third-triangle {
     top: -69px;
     left: 118px;
     width: 5px;
@@ -145,22 +145,22 @@
     z-index: 1;
 }
 
-.about__photo img {
+.about-photo img {
     max-width: 200px;
 }
 
-.about__contact {
+.about-contact {
     margin: 40px 0 0 0;
 }
 
-.about__contact a {
+.about-contact a {
     padding: 10px;
     background-color: #fff;
     border-radius: 10px;
     color: #000;
 }
 
-.about__contact a:hover,
-.about__contact a:focus {
+.about-contact a:hover,
+.about-contact a:focus {
     background-color: $secondary-color;
 }

@@ -3,7 +3,7 @@
 
 const menuBtn = document.querySelector(".menu-btn");
 const menuNav = document.querySelector(".menu-nav");
-const sumbitBtn = document.querySelector(".submit-btn");
+const scrollUpBtn = document.querySelector(".button-up");
 
 let showMenu = false;
 
@@ -11,10 +11,10 @@ let showMenu = false;
 ///////////////////Funtions/////////////////////////////////////////////
 
 // Toggle the hamburger menu for mobile screen
-const toggleMenu = function () {
-    const hamburger = document.querySelector(".menu-btn__burger");
+const toggleMenu = () => {
+    const hamburger = document.querySelector(".menu-btn-burger");
     const nav = document.querySelector(".nav");
-    const navItems = document.querySelectorAll(".menu-nav__item");
+    const navItems = document.querySelectorAll(".menu-nav-item");
     hamburger.classList.toggle("open");
     nav.classList.toggle("open");
     menuNav.classList.toggle("open");
@@ -22,6 +22,12 @@ const toggleMenu = function () {
     showMenu = !showMenu;
 };
 
+const scrollUpEvent = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+};
 ///////////////////////////////////////////////////////////////////////////
 //////////////////Events//////////////////////////////////////////////////
 
@@ -29,12 +35,26 @@ const toggleMenu = function () {
 menuBtn.addEventListener("click", toggleMenu);
 menuNav.addEventListener("click", toggleMenu);
 
-sumbitBtn.addEventListener("submit", (e) => {
-    const emailInput = document.getElementById("email");
-    const nameInput = document.getElementById("name");
-    const messageInput = document.getElementById("message");
-    e.preventDefault();
-    emailInput.value = "";
-    nameInput.value = "";
-    messageInput.value = "";
+// sumbitBtn.addEventListener("submit", (e) => {
+//     const emailInput = document.getElementById("email");
+//     const nameInput = document.getElementById("name");
+//     const messageInput = document.getElementById("message");
+//     e.preventDefault();
+//     emailInput.value = "";
+//     nameInput.value = "";
+//     messageInput.value = "";
+// });
+
+// Scroll to top of the page button
+scrollUpBtn.addEventListener("click", scrollUpEvent);
+
+// Show the scrollUpEvent by listening the scroll event
+window.addEventListener("scroll", () => {
+    // Test the position of the scroll to show the scrollUpEvent
+    if (document.querySelector("body").getBoundingClientRect().top < -800) {
+        scrollUpBtn.style.visibility = "visible";
+        // Calling the scrollUpEvent function
+    } else {
+        scrollUpBtn.style.visibility = "hidden";
+    }
 });

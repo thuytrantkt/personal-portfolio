@@ -7,13 +7,13 @@
     background-size: cover;
     text-align: center;
 
-    &__name {
+    &-name {
         padding: 5px 0 20px 0;
         text-decoration: underline;
         font-size: 2rem;
     }
 
-    &__name--first {
+    &-name--first {
         color: lighten($secondary-color, 25%);
     }
 
@@ -23,15 +23,15 @@
     }
 }
 
-.button__down {
+.button-down {
     position: relative;
     top: 45vh;
     cursor: pointer;
     animation: bounce 1s infinite;
 }
 
-.button__down:hover,
-.button__down:focus {
+.button-down:hover,
+.button-down:focus {
     color: #000;
 }
 
