@@ -224,1046 +224,950 @@ footer {
 }
 
 @-webkit-keyframes typed {
-  /* string 1, char 1 */
   0%,
-  0.54366% {
-    content: "C";
+  0.63392% {
+    content: "F";
   }
-  /* string 1, char 2 */
-  0.54466%,
-  1.08832% {
-    content: "CS";
+  0.63492%,
+  1.26884% {
+    content: "Fr";
   }
-  /* string 1, char 3 */
-  1.08932%,
-  1.63299% {
-    content: "CSS";
+  1.26984%,
+  1.90376% {
+    content: "Fro";
   }
-  /* string 1, char 4 */
-  1.63399%,
-  2.17765% {
-    content: "CSS ";
+  1.90476%,
+  2.53868% {
+    content: "Fron";
   }
-  /* string 1, char 5 */
-  2.17865%,
-  2.72231% {
-    content: "CSS t";
+  2.53968%,
+  3.1736% {
+    content: "Front";
   }
-  /* string 1, char 6 */
-  2.72331%,
-  3.26697% {
-    content: "CSS ty";
+  3.1746%,
+  3.80852% {
+    content: "Front ";
   }
-  /* string 1, char 7 */
-  3.26797%,
-  3.81164% {
-    content: "CSS typ";
+  3.80952%,
+  4.44344% {
+    content: "Front E";
   }
-  /* string 1, char 8 */
-  3.81264%,
-  4.3563% {
-    content: "CSS type";
+  4.44444%,
+  5.07837% {
+    content: "Front En";
   }
-  /* string 1, char 9 */
-  4.3573%,
-  4.90096% {
-    content: "CSS typed";
+  5.07937%,
+  5.71329% {
+    content: "Front End";
   }
-  /* string 1, char 10 */
-  4.90196%,
-  5.44562% {
-    content: "CSS typed ";
+  5.71429%,
+  6.34821% {
+    content: "Front End ";
   }
-  /* string 1, char 11 */
-  5.44662%,
-  5.99029% {
-    content: "CSS typed t";
+  6.34921%,
+  6.98313% {
+    content: "Front End W";
   }
-  /* string 1, char 12 */
-  5.99129%,
-  6.53495% {
-    content: "CSS typed th";
+  6.98413%,
+  7.61805% {
+    content: "Front End We";
   }
-  /* string 1, char 13 */
-  6.53595%,
-  7.07961% {
-    content: "CSS typed thi";
+  7.61905%,
+  8.25297% {
+    content: "Front End Web";
   }
-  /* string 1, char 14 */
-  7.08061%,
-  7.62427% {
-    content: "CSS typed this";
+  8.25397%,
+  8.88789% {
+    content: "Front End Web ";
   }
-  /* string 1, char 15 */
-  7.62527%,
-  8.16893% {
-    content: "CSS typed this ";
+  8.88889%,
+  9.52281% {
+    content: "Front End Web D";
   }
-  /* string 1, char 16 */
-  8.16993%,
-  8.7136% {
-    content: "CSS typed this s";
+  9.52381%,
+  10.15773% {
+    content: "Front End Web De";
   }
-  /* string 1, char 17 */
-  8.7146%,
-  9.25826% {
-    content: "CSS typed this st";
+  10.15873%,
+  10.79265% {
+    content: "Front End Web Dev";
   }
-  /* string 1, char 18 */
-  9.25926%,
-  9.80292% {
-    content: "CSS typed this str";
+  10.79365%,
+  11.42757% {
+    content: "Front End Web Deve";
   }
-  /* string 1, char 19 */
-  9.80392%,
-  10.34758% {
-    content: "CSS typed this stri";
+  11.42857%,
+  12.06249% {
+    content: "Front End Web Devel";
   }
-  /* string 1, char 20 */
-  10.34858%,
-  10.89225% {
-    content: "CSS typed this strin";
+  12.06349%,
+  12.69741% {
+    content: "Front End Web Develo";
   }
-  /* string 1, char 21 */
-  10.89325%,
-  11.43691% {
-    content: "CSS typed this string";
+  12.69841%,
+  13.33233% {
+    content: "Front End Web Develop";
   }
-  /* string 1, char 22 */
-  11.43791%,
-  23.31055% {
-    content: "CSS typed this string!";
+  13.33333%,
+  13.96725% {
+    content: "Front End Web Develope";
   }
-  /* string 1, char 23 */
-  23.31155%,
-  23.74628% {
-    content: "CSS typed this string";
+  13.96825%,
+  24.44344% {
+    content: "Front End Web Developer";
   }
-  /* string 1, char 24 */
-  23.74728%,
-  24.18201% {
-    content: "CSS typed this strin";
+  24.44444%,
+  24.7609% {
+    content: "Front End Web Develope";
   }
-  /* string 1, char 25 */
-  24.18301%,
-  24.61774% {
-    content: "CSS typed this stri";
+  24.7619%,
+  25.07837% {
+    content: "Front End Web Develop";
   }
-  /* string 1, char 26 */
-  24.61874%,
-  25.05347% {
-    content: "CSS typed this str";
+  25.07937%,
+  25.39583% {
+    content: "Front End Web Develo";
   }
-  /* string 1, char 27 */
-  25.05447%,
-  25.4892% {
-    content: "CSS typed this st";
+  25.39683%,
+  25.71329% {
+    content: "Front End Web Devel";
   }
-  /* string 1, char 28 */
-  25.4902%,
-  25.92493% {
-    content: "CSS typed this s";
+  25.71429%,
+  26.03075% {
+    content: "Front End Web Deve";
   }
-  /* string 1, char 29 */
-  25.92593%,
-  26.36066% {
-    content: "CSS typed this ";
+  26.03175%,
+  26.34821% {
+    content: "Front End Web Dev";
   }
-  /* string 1, char 30 */
-  26.36166%,
-  26.79639% {
-    content: "CSS typed this";
+  26.34921%,
+  26.66567% {
+    content: "Front End Web De";
   }
-  /* string 1, char 31 */
-  26.79739%,
-  27.23212% {
-    content: "CSS typed thi";
+  26.66667%,
+  26.98313% {
+    content: "Front End Web D";
   }
-  /* string 1, char 32 */
-  27.23312%,
-  27.66785% {
-    content: "CSS typed th";
+  26.98413%,
+  27.30059% {
+    content: "Front End Web ";
   }
-  /* string 1, char 33 */
-  27.66885%,
-  28.10358% {
-    content: "CSS typed t";
+  27.30159%,
+  27.61805% {
+    content: "Front End Web";
   }
-  /* string 1, char 34 */
-  28.10458%,
-  28.53931% {
-    content: "CSS typed ";
+  27.61905%,
+  27.93551% {
+    content: "Front End We";
   }
-  /* string 1, char 35 */
-  28.54031%,
-  28.97503% {
-    content: "CSS typed";
+  27.93651%,
+  28.25297% {
+    content: "Front End W";
   }
-  /* string 1, char 36 */
-  28.97603%,
-  29.41076% {
-    content: "CSS type";
+  28.25397%,
+  28.57043% {
+    content: "Front End ";
   }
-  /* string 1, char 37 */
-  29.41176%,
-  29.84649% {
-    content: "CSS typ";
+  28.57143%,
+  28.88789% {
+    content: "Front End";
   }
-  /* string 1, char 38 */
-  29.84749%,
-  30.28222% {
-    content: "CSS ty";
+  28.88889%,
+  29.20535% {
+    content: "Front En";
   }
-  /* string 1, char 39 */
-  30.28322%,
-  30.71795% {
-    content: "CSS t";
+  29.20635%,
+  29.52281% {
+    content: "Front E";
   }
-  /* string 1, char 40 */
-  30.71895%,
-  31.15368% {
-    content: "CSS ";
+  29.52381%,
+  29.84027% {
+    content: "Front ";
   }
-  /* string 1, char 41 */
-  31.15468%,
-  31.58941% {
-    content: "CSS";
+  29.84127%,
+  30.15773% {
+    content: "Front";
   }
-  /* string 1, char 42 */
-  31.59041%,
-  32.02514% {
-    content: "CS";
+  30.15873%,
+  30.47519% {
+    content: "Fron";
   }
-  /* string 1, char 43 */
-  32.02614%,
-  32.46087% {
-    content: "C";
+  30.47619%,
+  30.79265% {
+    content: "Fro";
   }
-  /* string 1, char 44 */
-  32.46187%,
-  37.9075% {
+  30.79365%,
+  31.11011% {
+    content: "Fr";
+  }
+  31.11111%,
+  31.42757% {
+    content: "F";
+  }
+  31.42857%,
+  36.50694% {
     content: "​";
   }
-  /* string 2, char 1 */
-  37.9085%,
-  38.45216% {
-    content: "I";
+  36.50794%,
+  37.14186% {
+    content: "M";
   }
-  /* string 2, char 2 */
-  38.45316%,
-  38.99682% {
-    content: "It";
+  37.14286%,
+  37.77678% {
+    content: "Mo";
   }
-  /* string 2, char 3 */
-  38.99782%,
-  39.54148% {
-    content: "It ";
+  37.77778%,
+  38.4117% {
+    content: "Mot";
   }
-  /* string 2, char 4 */
-  39.54248%,
-  40.08615% {
-    content: "It t";
+  38.4127%,
+  39.04662% {
+    content: "Moto";
   }
-  /* string 2, char 5 */
-  40.08715%,
-  40.63081% {
-    content: "It ty";
+  39.04762%,
+  39.68154% {
+    content: "Motor";
   }
-  /* string 2, char 6 */
-  40.63181%,
-  41.17547% {
-    content: "It typ";
+  39.68254%,
+  40.31646% {
+    content: "Motorc";
   }
-  /* string 2, char 7 */
-  41.17647%,
-  41.72013% {
-    content: "It type";
+  40.31746%,
+  40.95138% {
+    content: "Motorcy";
   }
-  /* string 2, char 8 */
-  41.72113%,
-  42.2648% {
-    content: "It typed";
+  40.95238%,
+  41.5863% {
+    content: "Motorcyc";
   }
-  /* string 2, char 9 */
-  42.2658%,
-  42.80946% {
-    content: "It typed ";
+  41.5873%,
+  42.22122% {
+    content: "Motorcycl";
   }
-  /* string 2, char 10 */
-  42.81046%,
-  43.35412% {
-    content: "It typed t";
+  42.22222%,
+  42.85614% {
+    content: "Motorcycle";
   }
-  /* string 2, char 11 */
-  43.35512%,
-  43.89878% {
-    content: "It typed th";
+  42.85714%,
+  43.49106% {
+    content: "Motorcycle ";
   }
-  /* string 2, char 12 */
-  43.89978%,
-  44.44344% {
-    content: "It typed thi";
+  43.49206%,
+  44.12598% {
+    content: "Motorcycle B";
   }
-  /* string 2, char 13 */
-  44.44444%,
-  44.98811% {
-    content: "It typed this";
+  44.12698%,
+  44.7609% {
+    content: "Motorcycle Bi";
   }
-  /* string 2, char 14 */
-  44.98911%,
-  45.53277% {
-    content: "It typed this ";
+  44.7619%,
+  45.39583% {
+    content: "Motorcycle Bik";
   }
-  /* string 2, char 15 */
-  45.53377%,
-  46.07743% {
-    content: "It typed this o";
+  45.39683%,
+  46.03075% {
+    content: "Motorcycle Bike";
   }
-  /* string 2, char 16 */
-  46.07843%,
-  46.62209% {
-    content: "It typed this on";
+  46.03175%,
+  46.66567% {
+    content: "Motorcycle Biker";
   }
-  /* string 2, char 17 */
-  46.62309%,
-  47.16676% {
-    content: "It typed this one";
+  46.66667%,
+  47.30059% {
+    content: "Motorcycle Biker ";
   }
-  /* string 2, char 18 */
-  47.16776%,
-  47.71142% {
-    content: "It typed this one ";
+  47.30159%,
+  57.77678% {
+    content: "Motorcycle Biker 🏍";
   }
-  /* string 2, char 19 */
-  47.71242%,
-  48.25608% {
-    content: "It typed this one t";
+  57.77778%,
+  58.09424% {
+    content: "Motorcycle Biker ";
   }
-  /* string 2, char 20 */
-  48.25708%,
-  48.80074% {
-    content: "It typed this one to";
+  58.09524%,
+  58.4117% {
+    content: "Motorcycle Biker";
   }
-  /* string 2, char 21 */
-  48.80174%,
-  49.34541% {
-    content: "It typed this one too";
+  58.4127%,
+  58.72916% {
+    content: "Motorcycle Bike";
   }
-  /* string 2, char 22 */
-  49.34641%,
-  49.89007% {
-    content: "It typed this one too ";
+  58.73016%,
+  59.04662% {
+    content: "Motorcycle Bik";
   }
-  /* string 2, char 23 */
-  49.89107%,
-  61.76371% {
-    content: "It typed this one too 😱";
+  59.04762%,
+  59.36408% {
+    content: "Motorcycle Bi";
   }
-  /* string 2, char 24 */
-  61.76471%,
-  62.19944% {
-    content: "It typed this one too ";
+  59.36508%,
+  59.68154% {
+    content: "Motorcycle B";
   }
-  /* string 2, char 25 */
-  62.20044%,
-  62.63517% {
-    content: "It typed this one too";
+  59.68254%,
+  59.999% {
+    content: "Motorcycle ";
   }
-  /* string 2, char 26 */
-  62.63617%,
-  63.0709% {
-    content: "It typed this one to";
+  60%,
+  60.31646% {
+    content: "Motorcycle";
   }
-  /* string 2, char 27 */
-  63.0719%,
-  63.50663% {
-    content: "It typed this one t";
+  60.31746%,
+  60.63392% {
+    content: "Motorcycl";
   }
-  /* string 2, char 28 */
-  63.50763%,
-  63.94236% {
-    content: "It typed this one ";
+  60.63492%,
+  60.95138% {
+    content: "Motorcyc";
   }
-  /* string 2, char 29 */
-  63.94336%,
-  64.37808% {
-    content: "It typed this one";
+  60.95238%,
+  61.26884% {
+    content: "Motorcy";
   }
-  /* string 2, char 30 */
-  64.37908%,
-  64.81381% {
-    content: "It typed this on";
+  61.26984%,
+  61.5863% {
+    content: "Motorc";
   }
-  /* string 2, char 31 */
-  64.81481%,
-  65.24954% {
-    content: "It typed this o";
+  61.5873%,
+  61.90376% {
+    content: "Motor";
   }
-  /* string 2, char 32 */
-  65.25054%,
-  65.68527% {
-    content: "It typed this ";
+  61.90476%,
+  62.22122% {
+    content: "Moto";
   }
-  /* string 2, char 33 */
-  65.68627%,
-  66.121% {
-    content: "It typed this";
+  62.22222%,
+  62.53868% {
+    content: "Mot";
   }
-  /* string 2, char 34 */
-  66.122%,
-  66.55673% {
-    content: "It typed thi";
+  62.53968%,
+  62.85614% {
+    content: "Mo";
   }
-  /* string 2, char 35 */
-  66.55773%,
-  66.99246% {
-    content: "It typed th";
+  62.85714%,
+  63.1736% {
+    content: "M";
   }
-  /* string 2, char 36 */
-  66.99346%,
-  67.42819% {
-    content: "It typed t";
-  }
-  /* string 2, char 37 */
-  67.42919%,
-  67.86392% {
-    content: "It typed ";
-  }
-  /* string 2, char 38 */
-  67.86492%,
-  68.29965% {
-    content: "It typed";
-  }
-  /* string 2, char 39 */
-  68.30065%,
-  68.73538% {
-    content: "It type";
-  }
-  /* string 2, char 40 */
-  68.73638%,
-  69.17111% {
-    content: "It typ";
-  }
-  /* string 2, char 41 */
-  69.17211%,
-  69.60684% {
-    content: "It ty";
-  }
-  /* string 2, char 42 */
-  69.60784%,
-  70.04257% {
-    content: "It t";
-  }
-  /* string 2, char 43 */
-  70.04357%,
-  70.4783% {
-    content: "It ";
-  }
-  /* string 2, char 44 */
-  70.4793%,
-  70.91403% {
-    content: "It";
-  }
-  /* string 2, char 45 */
-  70.91503%,
-  71.34976% {
-    content: "I";
-  }
-  /* string 2, char 46 */
-  71.35076%,
-  76.79639% {
+  63.1746%,
+  68.25297% {
     content: "​";
   }
-  /* string 3, char 1 */
-  76.79739%,
-  77.34105% {
-    content: "E";
+  68.25397%,
+  68.88789% {
+    content: "N";
   }
-  /* string 3, char 2 */
-  77.34205%,
-  77.88571% {
-    content: "En";
+  68.88889%,
+  69.52281% {
+    content: "Ni";
   }
-  /* string 3, char 3 */
-  77.88671%,
-  78.43037% {
-    content: "Enj";
+  69.52381%,
+  70.15773% {
+    content: "Nic";
   }
-  /* string 3, char 4 */
-  78.43137%,
-  78.97503% {
-    content: "Enjo";
+  70.15873%,
+  70.79265% {
+    content: "Nice";
   }
-  /* string 3, char 5 */
-  78.97603%,
-  79.5197% {
-    content: "Enjoy";
+  70.79365%,
+  71.42757% {
+    content: "Nice ";
   }
-  /* string 3, char 6 */
-  79.5207%,
-  80.06436% {
-    content: "Enjoy ";
+  71.42857%,
+  72.06249% {
+    content: "Nice t";
   }
-  /* string 3, char 7 */
-  80.06536%,
-  91.938% {
-    content: "Enjoy ☕";
+  72.06349%,
+  72.69741% {
+    content: "Nice to";
   }
-  /* string 3, char 8 */
-  91.939%,
-  92.37373% {
-    content: "Enjoy ";
+  72.69841%,
+  73.33233% {
+    content: "Nice to ";
   }
-  /* string 3, char 9 */
-  92.37473%,
-  92.80946% {
-    content: "Enjoy";
+  73.33333%,
+  73.96725% {
+    content: "Nice to m";
   }
-  /* string 3, char 10 */
-  92.81046%,
-  93.24519% {
-    content: "Enjo";
+  73.96825%,
+  74.60217% {
+    content: "Nice to me";
   }
-  /* string 3, char 11 */
-  93.24619%,
-  93.68092% {
-    content: "Enj";
+  74.60317%,
+  75.2371% {
+    content: "Nice to mee";
   }
-  /* string 3, char 12 */
-  93.68192%,
-  94.11665% {
-    content: "En";
+  75.2381%,
+  75.87202% {
+    content: "Nice to meet";
   }
-  /* string 3, char 13 */
-  94.11765%,
-  94.55238% {
-    content: "E";
+  75.87302%,
+  76.50694% {
+    content: "Nice to meet ";
   }
-  /* string 3, char 14 */
-  94.55338%,
+  76.50794%,
+  77.14186% {
+    content: "Nice to meet y";
+  }
+  77.14286%,
+  77.77678% {
+    content: "Nice to meet yo";
+  }
+  77.77778%,
+  78.4117% {
+    content: "Nice to meet you";
+  }
+  78.4127%,
+  79.04662% {
+    content: "Nice to meet you ";
+  }
+  79.04762%,
+  89.52281% {
+    content: "Nice to meet you 😀";
+  }
+  89.52381%,
+  89.84027% {
+    content: "Nice to meet you ";
+  }
+  89.84127%,
+  90.15773% {
+    content: "Nice to meet you";
+  }
+  90.15873%,
+  90.47519% {
+    content: "Nice to meet yo";
+  }
+  90.47619%,
+  90.79265% {
+    content: "Nice to meet y";
+  }
+  90.79365%,
+  91.11011% {
+    content: "Nice to meet ";
+  }
+  91.11111%,
+  91.42757% {
+    content: "Nice to meet";
+  }
+  91.42857%,
+  91.74503% {
+    content: "Nice to mee";
+  }
+  91.74603%,
+  92.06249% {
+    content: "Nice to me";
+  }
+  92.06349%,
+  92.37995% {
+    content: "Nice to m";
+  }
+  92.38095%,
+  92.69741% {
+    content: "Nice to ";
+  }
+  92.69841%,
+  93.01487% {
+    content: "Nice to";
+  }
+  93.01587%,
+  93.33233% {
+    content: "Nice t";
+  }
+  93.33333%,
+  93.64979% {
+    content: "Nice ";
+  }
+  93.65079%,
+  93.96725% {
+    content: "Nice";
+  }
+  93.96825%,
+  94.28471% {
+    content: "Nic";
+  }
+  94.28571%,
+  94.60217% {
+    content: "Ni";
+  }
+  94.60317%,
+  94.91963% {
+    content: "N";
+  }
+  94.92063%,
   100% {
     content: "​";
   }
 }
 
 @keyframes typed {
-  /* string 1, char 1 */
   0%,
-  0.54366% {
-    content: "C";
+  0.63392% {
+    content: "F";
   }
-  /* string 1, char 2 */
-  0.54466%,
-  1.08832% {
-    content: "CS";
+  0.63492%,
+  1.26884% {
+    content: "Fr";
   }
-  /* string 1, char 3 */
-  1.08932%,
-  1.63299% {
-    content: "CSS";
+  1.26984%,
+  1.90376% {
+    content: "Fro";
   }
-  /* string 1, char 4 */
-  1.63399%,
-  2.17765% {
-    content: "CSS ";
+  1.90476%,
+  2.53868% {
+    content: "Fron";
   }
-  /* string 1, char 5 */
-  2.17865%,
-  2.72231% {
-    content: "CSS t";
+  2.53968%,
+  3.1736% {
+    content: "Front";
   }
-  /* string 1, char 6 */
-  2.72331%,
-  3.26697% {
-    content: "CSS ty";
+  3.1746%,
+  3.80852% {
+    content: "Front ";
   }
-  /* string 1, char 7 */
-  3.26797%,
-  3.81164% {
-    content: "CSS typ";
+  3.80952%,
+  4.44344% {
+    content: "Front E";
   }
-  /* string 1, char 8 */
-  3.81264%,
-  4.3563% {
-    content: "CSS type";
+  4.44444%,
+  5.07837% {
+    content: "Front En";
   }
-  /* string 1, char 9 */
-  4.3573%,
-  4.90096% {
-    content: "CSS typed";
+  5.07937%,
+  5.71329% {
+    content: "Front End";
   }
-  /* string 1, char 10 */
-  4.90196%,
-  5.44562% {
-    content: "CSS typed ";
+  5.71429%,
+  6.34821% {
+    content: "Front End ";
   }
-  /* string 1, char 11 */
-  5.44662%,
-  5.99029% {
-    content: "CSS typed t";
+  6.34921%,
+  6.98313% {
+    content: "Front End W";
   }
-  /* string 1, char 12 */
-  5.99129%,
-  6.53495% {
-    content: "CSS typed th";
+  6.98413%,
+  7.61805% {
+    content: "Front End We";
   }
-  /* string 1, char 13 */
-  6.53595%,
-  7.07961% {
-    content: "CSS typed thi";
+  7.61905%,
+  8.25297% {
+    content: "Front End Web";
   }
-  /* string 1, char 14 */
-  7.08061%,
-  7.62427% {
-    content: "CSS typed this";
+  8.25397%,
+  8.88789% {
+    content: "Front End Web ";
   }
-  /* string 1, char 15 */
-  7.62527%,
-  8.16893% {
-    content: "CSS typed this ";
+  8.88889%,
+  9.52281% {
+    content: "Front End Web D";
   }
-  /* string 1, char 16 */
-  8.16993%,
-  8.7136% {
-    content: "CSS typed this s";
+  9.52381%,
+  10.15773% {
+    content: "Front End Web De";
   }
-  /* string 1, char 17 */
-  8.7146%,
-  9.25826% {
-    content: "CSS typed this st";
+  10.15873%,
+  10.79265% {
+    content: "Front End Web Dev";
   }
-  /* string 1, char 18 */
-  9.25926%,
-  9.80292% {
-    content: "CSS typed this str";
+  10.79365%,
+  11.42757% {
+    content: "Front End Web Deve";
   }
-  /* string 1, char 19 */
-  9.80392%,
-  10.34758% {
-    content: "CSS typed this stri";
+  11.42857%,
+  12.06249% {
+    content: "Front End Web Devel";
   }
-  /* string 1, char 20 */
-  10.34858%,
-  10.89225% {
-    content: "CSS typed this strin";
+  12.06349%,
+  12.69741% {
+    content: "Front End Web Develo";
   }
-  /* string 1, char 21 */
-  10.89325%,
-  11.43691% {
-    content: "CSS typed this string";
+  12.69841%,
+  13.33233% {
+    content: "Front End Web Develop";
   }
-  /* string 1, char 22 */
-  11.43791%,
-  23.31055% {
-    content: "CSS typed this string!";
+  13.33333%,
+  13.96725% {
+    content: "Front End Web Develope";
   }
-  /* string 1, char 23 */
-  23.31155%,
-  23.74628% {
-    content: "CSS typed this string";
+  13.96825%,
+  24.44344% {
+    content: "Front End Web Developer";
   }
-  /* string 1, char 24 */
-  23.74728%,
-  24.18201% {
-    content: "CSS typed this strin";
+  24.44444%,
+  24.7609% {
+    content: "Front End Web Develope";
   }
-  /* string 1, char 25 */
-  24.18301%,
-  24.61774% {
-    content: "CSS typed this stri";
+  24.7619%,
+  25.07837% {
+    content: "Front End Web Develop";
   }
-  /* string 1, char 26 */
-  24.61874%,
-  25.05347% {
-    content: "CSS typed this str";
+  25.07937%,
+  25.39583% {
+    content: "Front End Web Develo";
   }
-  /* string 1, char 27 */
-  25.05447%,
-  25.4892% {
-    content: "CSS typed this st";
+  25.39683%,
+  25.71329% {
+    content: "Front End Web Devel";
   }
-  /* string 1, char 28 */
-  25.4902%,
-  25.92493% {
-    content: "CSS typed this s";
+  25.71429%,
+  26.03075% {
+    content: "Front End Web Deve";
   }
-  /* string 1, char 29 */
-  25.92593%,
-  26.36066% {
-    content: "CSS typed this ";
+  26.03175%,
+  26.34821% {
+    content: "Front End Web Dev";
   }
-  /* string 1, char 30 */
-  26.36166%,
-  26.79639% {
-    content: "CSS typed this";
+  26.34921%,
+  26.66567% {
+    content: "Front End Web De";
   }
-  /* string 1, char 31 */
-  26.79739%,
-  27.23212% {
-    content: "CSS typed thi";
+  26.66667%,
+  26.98313% {
+    content: "Front End Web D";
   }
-  /* string 1, char 32 */
-  27.23312%,
-  27.66785% {
-    content: "CSS typed th";
+  26.98413%,
+  27.30059% {
+    content: "Front End Web ";
   }
-  /* string 1, char 33 */
-  27.66885%,
-  28.10358% {
-    content: "CSS typed t";
+  27.30159%,
+  27.61805% {
+    content: "Front End Web";
   }
-  /* string 1, char 34 */
-  28.10458%,
-  28.53931% {
-    content: "CSS typed ";
+  27.61905%,
+  27.93551% {
+    content: "Front End We";
   }
-  /* string 1, char 35 */
-  28.54031%,
-  28.97503% {
-    content: "CSS typed";
+  27.93651%,
+  28.25297% {
+    content: "Front End W";
   }
-  /* string 1, char 36 */
-  28.97603%,
-  29.41076% {
-    content: "CSS type";
+  28.25397%,
+  28.57043% {
+    content: "Front End ";
   }
-  /* string 1, char 37 */
-  29.41176%,
-  29.84649% {
-    content: "CSS typ";
+  28.57143%,
+  28.88789% {
+    content: "Front End";
   }
-  /* string 1, char 38 */
-  29.84749%,
-  30.28222% {
-    content: "CSS ty";
+  28.88889%,
+  29.20535% {
+    content: "Front En";
   }
-  /* string 1, char 39 */
-  30.28322%,
-  30.71795% {
-    content: "CSS t";
+  29.20635%,
+  29.52281% {
+    content: "Front E";
   }
-  /* string 1, char 40 */
-  30.71895%,
-  31.15368% {
-    content: "CSS ";
+  29.52381%,
+  29.84027% {
+    content: "Front ";
   }
-  /* string 1, char 41 */
-  31.15468%,
-  31.58941% {
-    content: "CSS";
+  29.84127%,
+  30.15773% {
+    content: "Front";
   }
-  /* string 1, char 42 */
-  31.59041%,
-  32.02514% {
-    content: "CS";
+  30.15873%,
+  30.47519% {
+    content: "Fron";
   }
-  /* string 1, char 43 */
-  32.02614%,
-  32.46087% {
-    content: "C";
+  30.47619%,
+  30.79265% {
+    content: "Fro";
   }
-  /* string 1, char 44 */
-  32.46187%,
-  37.9075% {
+  30.79365%,
+  31.11011% {
+    content: "Fr";
+  }
+  31.11111%,
+  31.42757% {
+    content: "F";
+  }
+  31.42857%,
+  36.50694% {
     content: "​";
   }
-  /* string 2, char 1 */
-  37.9085%,
-  38.45216% {
-    content: "I";
+  36.50794%,
+  37.14186% {
+    content: "M";
   }
-  /* string 2, char 2 */
-  38.45316%,
-  38.99682% {
-    content: "It";
+  37.14286%,
+  37.77678% {
+    content: "Mo";
   }
-  /* string 2, char 3 */
-  38.99782%,
-  39.54148% {
-    content: "It ";
+  37.77778%,
+  38.4117% {
+    content: "Mot";
   }
-  /* string 2, char 4 */
-  39.54248%,
-  40.08615% {
-    content: "It t";
+  38.4127%,
+  39.04662% {
+    content: "Moto";
   }
-  /* string 2, char 5 */
-  40.08715%,
-  40.63081% {
-    content: "It ty";
+  39.04762%,
+  39.68154% {
+    content: "Motor";
   }
-  /* string 2, char 6 */
-  40.63181%,
-  41.17547% {
-    content: "It typ";
+  39.68254%,
+  40.31646% {
+    content: "Motorc";
   }
-  /* string 2, char 7 */
-  41.17647%,
-  41.72013% {
-    content: "It type";
+  40.31746%,
+  40.95138% {
+    content: "Motorcy";
   }
-  /* string 2, char 8 */
-  41.72113%,
-  42.2648% {
-    content: "It typed";
+  40.95238%,
+  41.5863% {
+    content: "Motorcyc";
   }
-  /* string 2, char 9 */
-  42.2658%,
-  42.80946% {
-    content: "It typed ";
+  41.5873%,
+  42.22122% {
+    content: "Motorcycl";
   }
-  /* string 2, char 10 */
-  42.81046%,
-  43.35412% {
-    content: "It typed t";
+  42.22222%,
+  42.85614% {
+    content: "Motorcycle";
   }
-  /* string 2, char 11 */
-  43.35512%,
-  43.89878% {
-    content: "It typed th";
+  42.85714%,
+  43.49106% {
+    content: "Motorcycle ";
   }
-  /* string 2, char 12 */
-  43.89978%,
-  44.44344% {
-    content: "It typed thi";
+  43.49206%,
+  44.12598% {
+    content: "Motorcycle B";
   }
-  /* string 2, char 13 */
-  44.44444%,
-  44.98811% {
-    content: "It typed this";
+  44.12698%,
+  44.7609% {
+    content: "Motorcycle Bi";
   }
-  /* string 2, char 14 */
-  44.98911%,
-  45.53277% {
-    content: "It typed this ";
+  44.7619%,
+  45.39583% {
+    content: "Motorcycle Bik";
   }
-  /* string 2, char 15 */
-  45.53377%,
-  46.07743% {
-    content: "It typed this o";
+  45.39683%,
+  46.03075% {
+    content: "Motorcycle Bike";
   }
-  /* string 2, char 16 */
-  46.07843%,
-  46.62209% {
-    content: "It typed this on";
+  46.03175%,
+  46.66567% {
+    content: "Motorcycle Biker";
   }
-  /* string 2, char 17 */
-  46.62309%,
-  47.16676% {
-    content: "It typed this one";
+  46.66667%,
+  47.30059% {
+    content: "Motorcycle Biker ";
   }
-  /* string 2, char 18 */
-  47.16776%,
-  47.71142% {
-    content: "It typed this one ";
+  47.30159%,
+  57.77678% {
+    content: "Motorcycle Biker 🏍";
   }
-  /* string 2, char 19 */
-  47.71242%,
-  48.25608% {
-    content: "It typed this one t";
+  57.77778%,
+  58.09424% {
+    content: "Motorcycle Biker ";
   }
-  /* string 2, char 20 */
-  48.25708%,
-  48.80074% {
-    content: "It typed this one to";
+  58.09524%,
+  58.4117% {
+    content: "Motorcycle Biker";
   }
-  /* string 2, char 21 */
-  48.80174%,
-  49.34541% {
-    content: "It typed this one too";
+  58.4127%,
+  58.72916% {
+    content: "Motorcycle Bike";
   }
-  /* string 2, char 22 */
-  49.34641%,
-  49.89007% {
-    content: "It typed this one too ";
+  58.73016%,
+  59.04662% {
+    content: "Motorcycle Bik";
   }
-  /* string 2, char 23 */
-  49.89107%,
-  61.76371% {
-    content: "It typed this one too 😱";
+  59.04762%,
+  59.36408% {
+    content: "Motorcycle Bi";
   }
-  /* string 2, char 24 */
-  61.76471%,
-  62.19944% {
-    content: "It typed this one too ";
+  59.36508%,
+  59.68154% {
+    content: "Motorcycle B";
   }
-  /* string 2, char 25 */
-  62.20044%,
-  62.63517% {
-    content: "It typed this one too";
+  59.68254%,
+  59.999% {
+    content: "Motorcycle ";
   }
-  /* string 2, char 26 */
-  62.63617%,
-  63.0709% {
-    content: "It typed this one to";
+  60%,
+  60.31646% {
+    content: "Motorcycle";
   }
-  /* string 2, char 27 */
-  63.0719%,
-  63.50663% {
-    content: "It typed this one t";
+  60.31746%,
+  60.63392% {
+    content: "Motorcycl";
   }
-  /* string 2, char 28 */
-  63.50763%,
-  63.94236% {
-    content: "It typed this one ";
+  60.63492%,
+  60.95138% {
+    content: "Motorcyc";
   }
-  /* string 2, char 29 */
-  63.94336%,
-  64.37808% {
-    content: "It typed this one";
+  60.95238%,
+  61.26884% {
+    content: "Motorcy";
   }
-  /* string 2, char 30 */
-  64.37908%,
-  64.81381% {
-    content: "It typed this on";
+  61.26984%,
+  61.5863% {
+    content: "Motorc";
   }
-  /* string 2, char 31 */
-  64.81481%,
-  65.24954% {
-    content: "It typed this o";
+  61.5873%,
+  61.90376% {
+    content: "Motor";
   }
-  /* string 2, char 32 */
-  65.25054%,
-  65.68527% {
-    content: "It typed this ";
+  61.90476%,
+  62.22122% {
+    content: "Moto";
   }
-  /* string 2, char 33 */
-  65.68627%,
-  66.121% {
-    content: "It typed this";
+  62.22222%,
+  62.53868% {
+    content: "Mot";
   }
-  /* string 2, char 34 */
-  66.122%,
-  66.55673% {
-    content: "It typed thi";
+  62.53968%,
+  62.85614% {
+    content: "Mo";
   }
-  /* string 2, char 35 */
-  66.55773%,
-  66.99246% {
-    content: "It typed th";
+  62.85714%,
+  63.1736% {
+    content: "M";
   }
-  /* string 2, char 36 */
-  66.99346%,
-  67.42819% {
-    content: "It typed t";
-  }
-  /* string 2, char 37 */
-  67.42919%,
-  67.86392% {
-    content: "It typed ";
-  }
-  /* string 2, char 38 */
-  67.86492%,
-  68.29965% {
-    content: "It typed";
-  }
-  /* string 2, char 39 */
-  68.30065%,
-  68.73538% {
-    content: "It type";
-  }
-  /* string 2, char 40 */
-  68.73638%,
-  69.17111% {
-    content: "It typ";
-  }
-  /* string 2, char 41 */
-  69.17211%,
-  69.60684% {
-    content: "It ty";
-  }
-  /* string 2, char 42 */
-  69.60784%,
-  70.04257% {
-    content: "It t";
-  }
-  /* string 2, char 43 */
-  70.04357%,
-  70.4783% {
-    content: "It ";
-  }
-  /* string 2, char 44 */
-  70.4793%,
-  70.91403% {
-    content: "It";
-  }
-  /* string 2, char 45 */
-  70.91503%,
-  71.34976% {
-    content: "I";
-  }
-  /* string 2, char 46 */
-  71.35076%,
-  76.79639% {
+  63.1746%,
+  68.25297% {
     content: "​";
   }
-  /* string 3, char 1 */
-  76.79739%,
-  77.34105% {
-    content: "E";
+  68.25397%,
+  68.88789% {
+    content: "N";
   }
-  /* string 3, char 2 */
-  77.34205%,
-  77.88571% {
-    content: "En";
+  68.88889%,
+  69.52281% {
+    content: "Ni";
   }
-  /* string 3, char 3 */
-  77.88671%,
-  78.43037% {
-    content: "Enj";
+  69.52381%,
+  70.15773% {
+    content: "Nic";
   }
-  /* string 3, char 4 */
-  78.43137%,
-  78.97503% {
-    content: "Enjo";
+  70.15873%,
+  70.79265% {
+    content: "Nice";
   }
-  /* string 3, char 5 */
-  78.97603%,
-  79.5197% {
-    content: "Enjoy";
+  70.79365%,
+  71.42757% {
+    content: "Nice ";
   }
-  /* string 3, char 6 */
-  79.5207%,
-  80.06436% {
-    content: "Enjoy ";
+  71.42857%,
+  72.06249% {
+    content: "Nice t";
   }
-  /* string 3, char 7 */
-  80.06536%,
-  91.938% {
-    content: "Enjoy ☕";
+  72.06349%,
+  72.69741% {
+    content: "Nice to";
   }
-  /* string 3, char 8 */
-  91.939%,
-  92.37373% {
-    content: "Enjoy ";
+  72.69841%,
+  73.33233% {
+    content: "Nice to ";
   }
-  /* string 3, char 9 */
-  92.37473%,
-  92.80946% {
-    content: "Enjoy";
+  73.33333%,
+  73.96725% {
+    content: "Nice to m";
   }
-  /* string 3, char 10 */
-  92.81046%,
-  93.24519% {
-    content: "Enjo";
+  73.96825%,
+  74.60217% {
+    content: "Nice to me";
   }
-  /* string 3, char 11 */
-  93.24619%,
-  93.68092% {
-    content: "Enj";
+  74.60317%,
+  75.2371% {
+    content: "Nice to mee";
   }
-  /* string 3, char 12 */
-  93.68192%,
-  94.11665% {
-    content: "En";
+  75.2381%,
+  75.87202% {
+    content: "Nice to meet";
   }
-  /* string 3, char 13 */
-  94.11765%,
-  94.55238% {
-    content: "E";
+  75.87302%,
+  76.50694% {
+    content: "Nice to meet ";
   }
-  /* string 3, char 14 */
-  94.55338%,
+  76.50794%,
+  77.14186% {
+    content: "Nice to meet y";
+  }
+  77.14286%,
+  77.77678% {
+    content: "Nice to meet yo";
+  }
+  77.77778%,
+  78.4117% {
+    content: "Nice to meet you";
+  }
+  78.4127%,
+  79.04662% {
+    content: "Nice to meet you ";
+  }
+  79.04762%,
+  89.52281% {
+    content: "Nice to meet you 😀";
+  }
+  89.52381%,
+  89.84027% {
+    content: "Nice to meet you ";
+  }
+  89.84127%,
+  90.15773% {
+    content: "Nice to meet you";
+  }
+  90.15873%,
+  90.47519% {
+    content: "Nice to meet yo";
+  }
+  90.47619%,
+  90.79265% {
+    content: "Nice to meet y";
+  }
+  90.79365%,
+  91.11011% {
+    content: "Nice to meet ";
+  }
+  91.11111%,
+  91.42757% {
+    content: "Nice to meet";
+  }
+  91.42857%,
+  91.74503% {
+    content: "Nice to mee";
+  }
+  91.74603%,
+  92.06249% {
+    content: "Nice to me";
+  }
+  92.06349%,
+  92.37995% {
+    content: "Nice to m";
+  }
+  92.38095%,
+  92.69741% {
+    content: "Nice to ";
+  }
+  92.69841%,
+  93.01487% {
+    content: "Nice to";
+  }
+  93.01587%,
+  93.33233% {
+    content: "Nice t";
+  }
+  93.33333%,
+  93.64979% {
+    content: "Nice ";
+  }
+  93.65079%,
+  93.96725% {
+    content: "Nice";
+  }
+  93.96825%,
+  94.28471% {
+    content: "Nic";
+  }
+  94.28571%,
+  94.60217% {
+    content: "Ni";
+  }
+  94.60317%,
+  94.91963% {
+    content: "N";
+  }
+  94.92063%,
   100% {
     content: "​";
   }
@@ -1281,39 +1185,6 @@ footer {
   }
 }
 
-* {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.home {
-  height: 100%;
-  font-size: calc(10px + 2vw);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.home::after {
-  content: "​";
-  position: relative;
-  top: -13px;
-  display: inline-block;
-  padding-right: 3px;
-  padding-right: calc(3px + 0.1vw);
-  border-right: 10px solid rgba(51, 255, 51, 0.75);
-  border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
-  text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
-  white-space: nowrap;
-  -webkit-animation: typed 18.36s linear 1s infinite, beam-blink 1s infinite;
-          animation: typed 18.36s linear 1s infinite, beam-blink 1s infinite;
-}
-
-@media (max-width: 575px) {
-  .home::after {
-    top: -33px;
-  }
-}
-
 .home {
   height: 100vh;
   padding-top: 25vh;
@@ -1323,6 +1194,22 @@ footer {
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.home::after {
+  content: "​";
+  position: relative;
+  top: -60px;
+  display: inline-block;
+  padding-right: 3px;
+  padding-right: calc(3px + 0.1vw);
+  border-right: 10px solid rgba(51, 255, 51, 0.75);
+  border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 1.1rem;
+  -webkit-animation: typed 15.75s linear 1s infinite, beam-blink 1s infinite;
+          animation: typed 15.75s linear 1s infinite, beam-blink 1s infinite;
 }
 
 .home-name {
