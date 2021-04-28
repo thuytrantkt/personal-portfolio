@@ -164,3 +164,21 @@
 .about-contact a:focus {
     background-color: $secondary-color;
 }
+
+.resume-link-container {
+    margin: 20px auto 50px auto;
+}
+
+.resume-link-container a {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #000;
+}
+
+.resume-link-container a:hover,
+.resume-link-container a:focus {
+    background-color: $secondary-color;
+    color: #fff;
+}
