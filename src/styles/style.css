@@ -1579,6 +1579,24 @@ footer {
   background-color: #ddce00;
 }
 
+.resume-link-container {
+  margin: 20px auto 50px auto;
+}
+
+.resume-link-container a {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #000;
+}
+
+.resume-link-container a:hover,
+.resume-link-container a:focus {
+  background-color: #ddce00;
+  color: #fff;
+}
+
 .projects {
   font-size: 0.8rem;
   text-align: center;
@@ -1836,6 +1854,10 @@ footer {
   }
   .nav .menu-nav-link:hover, .nav .menu-nav-link:focus {
     border: none;
+  }
+  .about .text-secondary,
+  .projects .text-secondary {
+    font-size: 2rem;
   }
   .about {
     padding-top: 20vh;
