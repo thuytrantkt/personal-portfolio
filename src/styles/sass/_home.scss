@@ -8,6 +8,8 @@
             center top;
     background-size: cover;
     text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     &::after {
         content: "​";
