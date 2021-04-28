@@ -1,4 +1,90 @@
-@import "homeTitle";
+// Credit this animation to https://codepen.io/brandonmcconnell/pen/bZqGdw
+$strings: (
+    "Front End Web Developer" "Motorcycle Biker 🏍" "Nice to meet you 😀"
+);
+
+// now for some timing (in seconds)
+$timeCharType: 0.1; // character typed
+$timeChangeStr: 1.5; // time between typed/delete
+$timeCharDel: 0.05; // character deleted
+$timeChangeSent: 0.8; // time between strings
+
+// initializing some variables and functions ✊🏼
+$charCount: 0;
+$durTotal: 0;
+@each $string in $strings {
+    $charCount: $charCount + str-length($string);
+    $durTotal: $durTotal +
+        (str-length($string) * ($timeCharType + $timeCharDel)) +
+        $timeChangeStr +
+        $timeChangeSent;
+}
+@function percent($string, $letter, $modifier) {
+    $stringsPast: $string - 1;
+    $time: 0;
+    @while $stringsPast > 0 {
+        $time: $time +
+            (
+                ($timeCharType + $timeCharDel) *
+                    (str-length(nth($strings, $stringsPast)))
+            ) +
+            $timeChangeStr +
+            $timeChangeSent;
+        $stringsPast: $stringsPast - 1;
+    }
+    @if $letter <= str-length(nth($strings, $string)) {
+        $time: $time + ($timeCharType * ($letter - 1));
+    } @else {
+        $time: $time +
+            ($timeCharType * str-length(nth($strings, $string))) +
+            $timeChangeStr +
+            ($timeCharDel * ($letter - str-length(nth($strings, $string))));
+    }
+    @return ($time / $durTotal * 100 + $modifier) + "%";
+}
+$currentPercentage: 0;
+// now THIS is where the magic happens... ✨
+@keyframes typed {
+    @for $i from 1 through length($strings) {
+        @for $j from 1 through (str-length(nth($strings, $i)) * 2) {
+            @if $j < str-length(nth($strings, $i)) * 2 {
+                #{percent($i, $j, 0)},
+                #{percent($i, $j+1, -0.001)} {
+                    @if $j <= str-length(nth($strings, $i)) {
+                        content: quote(#{str_slice(nth($strings, $i), 1, $j)});
+                    } @else {
+                        content: quote(
+                            #{str_slice(
+                                    nth($strings, $i),
+                                    1,
+                                    str-length(nth($strings, $i)) -
+                                        ($j - str-length(nth($strings, $i)))
+                                )}
+                        );
+                    }
+                }
+            } @else {
+                @if $i < length($strings) {
+                    #{percent($i, $j, 0)},
+                    #{percent($i+1, 1, -0.001)} {
+                        content: "​";
+                    }
+                } @else {
+                    // last string
+                    #{percent($i, $j, 0)},
+                    100% {
+                        content: "​";
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes beam-blink {
+    75% {
+        border-color: transparent;
+    }
+}
 
 .home {
     height: 100vh;
