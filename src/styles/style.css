@@ -176,6 +176,7 @@ header {
   cursor: pointer;
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+  visibility: hidden;
 }
 
 .button-up:hover,
@@ -247,7 +248,7 @@ footer {
 
 .button-link {
   position: relative;
-  top: 45vh;
+  top: 40vh;
 }
 
 .button-down {
