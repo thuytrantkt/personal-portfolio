@@ -1,3 +1,5 @@
+@import "homeTitle";
+
 .home {
     height: 100vh;
     padding-top: 25vh;
@@ -6,6 +8,22 @@
             center top;
     background-size: cover;
     text-align: center;
+
+    &::after {
+        content: "​";
+        position: relative;
+        top: -60px;
+        display: inline-block;
+        padding-right: 3px;
+        padding-right: calc(3px + 0.1vw);
+        border-right: 10px solid rgba(#3f3, 0.75);
+        border-right: calc(1.1vw + 4px) solid rgba(#3f3, 0.75);
+        white-space: nowrap;
+        font-weight: 700;
+        font-size: 1.1rem;
+        animation: typed #{$durTotal + "s"} linear 1s infinite,
+            beam-blink 1s infinite;
+    }
 
     &-name {
         padding: 5px 0 20px 0;
