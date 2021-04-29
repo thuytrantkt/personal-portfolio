@@ -1794,8 +1794,9 @@ footer {
   color: #000;
 }
 
-.g-recaptcha {
+.recaptcha {
   padding: 10px 0;
+  width: 90%;
 }
 
 @media screen and (min-width: 434px) {
