@@ -1,4 +1,4 @@
-# Christie Tran's Portfolio
+# Thuy Tran's Portfolio
 
 Hi all,
 
@@ -11,4 +11,4 @@ Thank you for your time and your interests.
 I am looking forward to connecting with you and working with you in the furture!
 
 Sunshine,
-Christie Tran
+Thuy Tran
