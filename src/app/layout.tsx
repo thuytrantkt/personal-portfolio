@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { inter } from "./ui/fonts";
 import "./global.css";
+import { EmailIcon, GitHubIcon, LinkedInIcon } from "./assets/icons";
 
 export const metadata: Metadata = {
   title: "Thuy Tran's portfolio",
@@ -54,9 +55,15 @@ export default function RootLayout({
             <div className="footer-right-content">
               <p> Connect with me</p>
               <ul>
-                <li>GitHub</li>
-                <li>LinkedIn</li>
-                <li>Email</li>
+                <li>
+                  <GitHubIcon />
+                </li>
+                <li>
+                  <LinkedInIcon />
+                </li>
+                <li>
+                  <EmailIcon />
+                </li>
               </ul>
             </div>
           </footer>
