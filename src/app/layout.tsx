@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { inter } from "./ui/fonts";
 import "./global.css";
 import { EmailIcon, GitHubIcon, LinkedInIcon } from "./assets/icons";
+import { Link } from "@mui/material";
 
 export const metadata: Metadata = {
   title: "Thuy Tran's portfolio",
@@ -21,24 +22,24 @@ export default function RootLayout({
             <p>TKT</p>
             <nav>
               <ul>
-                <li>
+                <Link underline="hover">
                   <a href="/">Home</a>
-                </li>
-                <li>
+                </Link>
+                <Link underline="hover">
                   <a href="/about">About</a>
-                </li>
-                <li>
+                </Link>
+                <Link underline="hover">
                   <a href="/academics">Academics</a>
-                </li>
-                <li>
+                </Link>
+                <Link underline="hover">
                   <a href="/projects">Projects</a>
-                </li>
-                <li>
+                </Link>
+                <Link underline="hover">
                   <a href="/resume">Resume</a>
-                </li>
-                <li>
+                </Link>
+                <Link underline="hover">
                   <a href="/contact">Contact</a>
-                </li>
+                </Link>
               </ul>
             </nav>
           </header>
@@ -56,13 +57,19 @@ export default function RootLayout({
               <p> Connect with me</p>
               <ul>
                 <li>
-                  <GitHubIcon />
+                  <a href="https://github.com/thuytrantkt">
+                    <GitHubIcon />
+                  </a>
                 </li>
                 <li>
-                  <LinkedInIcon />
+                  <a href="https://www.linkedin.com/in/thuytrantkt/">
+                    <LinkedInIcon />
+                  </a>
                 </li>
                 <li>
-                  <EmailIcon />
+                  <a href="mailto:christiesunnie@gmail.com">
+                    <EmailIcon />
+                  </a>
                 </li>
               </ul>
             </div>
