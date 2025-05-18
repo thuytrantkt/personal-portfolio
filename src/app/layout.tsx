@@ -22,24 +22,36 @@ export default function RootLayout({
             <p>TKT</p>
             <nav>
               <ul>
-                <Link underline="hover">
-                  <a href="/">Home</a>
-                </Link>
-                <Link underline="hover">
-                  <a href="/about">About</a>
-                </Link>
-                <Link underline="hover">
-                  <a href="/academics">Academics</a>
-                </Link>
-                <Link underline="hover">
-                  <a href="/projects">Projects</a>
-                </Link>
-                <Link underline="hover">
-                  <a href="/resume">Resume</a>
-                </Link>
-                <Link underline="hover">
-                  <a href="/contact">Contact</a>
-                </Link>
+                <li>
+                  <Link underline="hover" href="/">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link underline="hover" href="/about">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link underline="hover" href="/academics">
+                    Academics
+                  </Link>
+                </li>
+                <li>
+                  <Link underline="hover" href="/projects">
+                    Projects
+                  </Link>
+                </li>
+                <li>
+                  <Link underline="hover" href="/resume">
+                    Resume
+                  </Link>
+                </li>
+                <li>
+                  <Link underline="hover" href="/contact">
+                    Contact
+                  </Link>
+                </li>
               </ul>
             </nav>
           </header>
@@ -57,19 +69,19 @@ export default function RootLayout({
               <p> Connect with me</p>
               <ul>
                 <li>
-                  <a href="https://github.com/thuytrantkt">
+                  <Link href="https://github.com/thuytrantkt">
                     <GitHubIcon />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/thuytrantkt/">
+                  <Link href="https://www.linkedin.com/in/thuytrantkt/">
                     <LinkedInIcon />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="mailto:christiesunnie@gmail.com">
+                  <Link href="mailto:christiesunnie@gmail.com">
                     <EmailIcon />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
