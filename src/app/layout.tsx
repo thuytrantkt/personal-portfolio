@@ -1,16 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { inter } from "./ui/fonts";
+import "./global.css";
+import { EmailIcon, GitHubIcon, LinkedInIcon } from "./assets/icons";
+import { Link } from "@mui/material";
 
 export const metadata: Metadata = {
   title: "Thuy Tran's portfolio",
@@ -24,8 +16,77 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <body className={inter.className}>
+        <main>
+          <header>
+            <p>TKT</p>
+            <nav>
+              <ul>
+                <li>
+                  <Link underline="hover" href="/">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link underline="hover" href="/about">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link underline="hover" href="/academics">
+                    Academics
+                  </Link>
+                </li>
+                <li>
+                  <Link underline="hover" href="/projects">
+                    Projects
+                  </Link>
+                </li>
+                <li>
+                  <Link underline="hover" href="/resume">
+                    Resume
+                  </Link>
+                </li>
+                <li>
+                  <Link underline="hover" href="/contact">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          {children}
+          <footer>
+            <div className="footer-left-content">
+              <p>TKT</p>
+              <p>
+                Building innovative digital solutions with a focus on clean,
+                efficient code and exceptional user experiences.
+              </p>
+              <p>{`© ${new Date().getFullYear()} Thuy Tran. All rights reserved.`}</p>
+            </div>
+            <div className="footer-right-content">
+              <p> Connect with me</p>
+              <ul>
+                <li>
+                  <Link href="https://github.com/thuytrantkt">
+                    <GitHubIcon />
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://www.linkedin.com/in/thuytrantkt/">
+                    <LinkedInIcon />
+                  </Link>
+                </li>
+                <li>
+                  <Link href="mailto:christiesunnie@gmail.com">
+                    <EmailIcon />
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </main>
       </body>
     </html>
   );
