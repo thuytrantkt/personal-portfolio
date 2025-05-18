@@ -1,5 +1,5 @@
 .homeContainer {
   display: flex;
-  justify-content: center;
-  padding-top: 64px;
+  justify-content: space-between;
+  /* padding: 40px 64px; */
 }

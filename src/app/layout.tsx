@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { inter } from "./ui/fonts";
-import "./globals.css";
+import "./global.css";
 
 export const metadata: Metadata = {
   title: "Thuy Tran's portfolio",
@@ -14,7 +14,54 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main>
+          <header>
+            <p>TKT</p>
+            <nav>
+              <ul>
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="/about">About</a>
+                </li>
+                <li>
+                  <a href="/academics">Academics</a>
+                </li>
+                <li>
+                  <a href="/projects">Projects</a>
+                </li>
+                <li>
+                  <a href="/resume">Resume</a>
+                </li>
+                <li>
+                  <a href="/contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          {children}
+          <footer>
+            <div className="footer-left-content">
+              <p>TKT</p>
+              <p>
+                Building innovative digital solutions with a focus on clean,
+                efficient code and exceptional user experiences.
+              </p>
+              <p>{`© ${new Date().getFullYear()} Thuy Tran. All rights reserved.`}</p>
+            </div>
+            <div className="footer-right-content">
+              <p> Connect with me</p>
+              <ul>
+                <li>GitHub</li>
+                <li>LinkedIn</li>
+                <li>Email</li>
+              </ul>
+            </div>
+          </footer>
+        </main>
+      </body>
     </html>
   );
 }
