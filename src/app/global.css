@@ -46,12 +46,6 @@ header {
   justify-content: space-between;
 }
 
-nav ul {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-}
-
 footer {
   display: flex;
   flex-direction: column;
@@ -99,6 +93,15 @@ footer {
   margin-left: 12px;
 }
 
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 768px) {
   .footer-connect {
     flex-direction: column;
@@ -110,12 +113,6 @@ footer {
   .footer-right-content {
     align-items: center;
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  nav ul {
-    display: none;
   }
 }
 

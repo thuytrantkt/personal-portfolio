@@ -3,6 +3,8 @@ import { inter } from "./ui/fonts";
 import "./global.css";
 import { EmailIcon, GitHubIcon, LinkedInIcon } from "./assets/icons";
 import { Link } from "@mui/material";
+import Navigation from "@/components/Navigation/Navigation";
+import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
 
 export const metadata: Metadata = {
   title: "Thuy Tran's portfolio",
@@ -17,78 +19,47 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main>
-          <header>
-            <p>TKT</p>
-            <nav>
-              <ul>
-                <li>
-                  <Link underline="hover" href="/">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link underline="hover" href="/about">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link underline="hover" href="/academics">
-                    Academics
-                  </Link>
-                </li>
-                <li>
-                  <Link underline="hover" href="/projects">
-                    Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link underline="hover" href="/resume">
-                    Resume
-                  </Link>
-                </li>
-                <li>
-                  <Link underline="hover" href="/contact">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </header>
-          {children}
-          <footer>
-            <div className="footer-connect">
-              <div className="footer-left-content">
-                <p>TKT</p>
-                <p className="footer-left-content-description">
-                  Building innovative digital solutions with a focus on clean,
-                  efficient code and exceptional user experiences.
-                </p>
+        <ThemeRegistry options={{ key: "joy" }}>
+          <main>
+            <header>
+              <p>TKT</p>
+              <Navigation />
+            </header>
+            {children}
+            <footer>
+              <div className="footer-connect">
+                <div className="footer-left-content">
+                  <p>TKT</p>
+                  <p className="footer-left-content-description">
+                    Building innovative digital solutions with a focus on clean,
+                    efficient code and exceptional user experiences.
+                  </p>
+                </div>
+                <div className="footer-right-content">
+                  <p> Connect with me</p>
+                  <ul>
+                    <li>
+                      <Link href="https://github.com/thuytrantkt">
+                        <GitHubIcon />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="https://www.linkedin.com/in/thuytrantkt/">
+                        <LinkedInIcon />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="mailto:christiesunnie@gmail.com">
+                        <EmailIcon />
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div className="footer-right-content">
-                <p> Connect with me</p>
-                <ul>
-                  <li>
-                    <Link href="https://github.com/thuytrantkt">
-                      <GitHubIcon />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="https://www.linkedin.com/in/thuytrantkt/">
-                      <LinkedInIcon />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="mailto:christiesunnie@gmail.com">
-                      <EmailIcon />
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <p>{`© ${new Date().getFullYear()} Thuy Tran. All rights reserved.`}</p>
-          </footer>
-        </main>
+              <p>© 2005 Thuy Tran. All rights reserved.</p>
+            </footer>
+          </main>
+        </ThemeRegistry>
       </body>
     </html>
   );
