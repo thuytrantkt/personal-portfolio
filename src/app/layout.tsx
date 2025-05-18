@@ -57,34 +57,36 @@ export default function RootLayout({
           </header>
           {children}
           <footer>
-            <div className="footer-left-content">
-              <p>TKT</p>
-              <p>
-                Building innovative digital solutions with a focus on clean,
-                efficient code and exceptional user experiences.
-              </p>
-              <p>{`© ${new Date().getFullYear()} Thuy Tran. All rights reserved.`}</p>
+            <div className="footer-connect">
+              <div className="footer-left-content">
+                <p>TKT</p>
+                <p className="footer-left-content-description">
+                  Building innovative digital solutions with a focus on clean,
+                  efficient code and exceptional user experiences.
+                </p>
+              </div>
+              <div className="footer-right-content">
+                <p> Connect with me</p>
+                <ul>
+                  <li>
+                    <Link href="https://github.com/thuytrantkt">
+                      <GitHubIcon />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="https://www.linkedin.com/in/thuytrantkt/">
+                      <LinkedInIcon />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="mailto:christiesunnie@gmail.com">
+                      <EmailIcon />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="footer-right-content">
-              <p> Connect with me</p>
-              <ul>
-                <li>
-                  <Link href="https://github.com/thuytrantkt">
-                    <GitHubIcon />
-                  </Link>
-                </li>
-                <li>
-                  <Link href="https://www.linkedin.com/in/thuytrantkt/">
-                    <LinkedInIcon />
-                  </Link>
-                </li>
-                <li>
-                  <Link href="mailto:christiesunnie@gmail.com">
-                    <EmailIcon />
-                  </Link>
-                </li>
-              </ul>
-            </div>
+            <p>{`© ${new Date().getFullYear()} Thuy Tran. All rights reserved.`}</p>
           </footer>
         </main>
       </body>
