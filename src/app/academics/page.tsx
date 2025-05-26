@@ -26,7 +26,7 @@ export default function Academics() {
       </Typography>
       <div
         className={`${
-          lgScreen ? "education-container-lg" : "education-container"
+          lgScreen ? "education-container--lg" : "education-container"
         }`}
       >
         <Card variant="solid">
@@ -85,7 +85,7 @@ export default function Academics() {
 
       <div
         className={`${
-          lgScreen ? "certificates-container-lg" : "certificates-container"
+          lgScreen ? "certificates-container--lg" : "certificates-container"
         }`}
       >
         <Card variant="solid">
