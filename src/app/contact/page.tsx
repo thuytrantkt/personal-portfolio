@@ -40,8 +40,8 @@ export default function Contact() {
         <Card variant="outlined">
           <Typography level="title-lg">Contact Information</Typography>
           <Typography>
-            I'd love to hear from you. Whether you have a question, proposal, or
-            just want to say hi.
+            I&lsquo;d love to hear from you. Whether you have a question,
+            proposal, or just want to say hi.
           </Typography>
 
           <CardContent>
@@ -78,8 +78,8 @@ export default function Contact() {
         <Card variant="outlined">
           <Typography level="title-lg">Send Me a Message</Typography>
           <Typography>
-            Let's start a conversation. Fill out the form below and I'll get
-            back to you as soon as possible.
+            Let&lsquo;s start a conversation. Fill out the form below and
+            I&lsquo;ll get back to you as soon as possible.
           </Typography>
 
           <CardContent

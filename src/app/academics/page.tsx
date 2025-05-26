@@ -63,7 +63,7 @@ export default function Academics() {
         <Card variant="solid">
           <CardContent>
             <Typography level="title-lg" textColor="inherit">
-              Bachelor's degree
+              Bachelor&lsquo;s degree
             </Typography>
             <Typography textColor="inherit">
               Vietnam National University in Hanoi, School of Law
