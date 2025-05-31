@@ -17,7 +17,7 @@ import {
 } from "@mui/joy";
 import { EmailIcon, GitHubIcon, LinkedInIcon, SendIcon } from "@/_assets/icons";
 import Link from "next/link";
-import "@/_ui/contact.css";
+import "@/_assets/stylesheets/contact.css";
 import useBreakpoint from "@/_hooks/useBreakpoints";
 import Hero from "@/_components/Hero/Hero";
 

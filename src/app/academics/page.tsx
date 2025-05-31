@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent, List, ListItem, Typography } from "@mui/joy";
-import "../../_ui/academics.css";
+import "../../_assets/stylesheets/academics.css";
 import useBreakpoint from "../../_hooks/useBreakpoints";
 import Hero from "@/_components/Hero/Hero";
 
