@@ -1,7 +1,5 @@
 "use client";
 
-import Hero from "@/components/Hero/Hero";
-
 import {
   Button,
   Card,
@@ -19,8 +17,9 @@ import {
 } from "@mui/joy";
 import { EmailIcon, GitHubIcon, LinkedInIcon, SendIcon } from "../assets/icons";
 import Link from "next/link";
-import "../ui/contact.css";
-import useBreakpoint from "../hooks/useBreakpoints";
+import "../../ui/contact.css";
+import useBreakpoint from "../../hooks/useBreakpoints";
+import Hero from "@/components/Hero/Hero";
 
 export default function Contact() {
   const lgScreen = useBreakpoint("lg");
