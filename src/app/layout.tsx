@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { inter } from "./ui/fonts";
+import { inter } from "../ui/fonts";
 import "./global.css";
 import { EmailIcon, GitHubIcon, LinkedInIcon } from "./assets/icons";
 import { Link } from "@mui/material";

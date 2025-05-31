@@ -1,6 +1,6 @@
 "use client";
 
-import useBreakpoint from "@/app/hooks/useBreakpoints";
+import useBreakpoint from "@/hooks/useBreakpoints";
 import { NAVOGATION_LIST_ITEMS } from "@/utils/constants";
 import { List, ListItem, ListItemButton } from "@mui/joy";
 
