@@ -29,7 +29,6 @@ const Navigation = () => {
 
   useEffect(() => {
     const currentPath = pathname.split("/").filter((item) => item !== "");
-    console.log("currentPath", currentPath);
     if (currentPath.length > 0) {
       setSelected(currentPath[0]);
     }
