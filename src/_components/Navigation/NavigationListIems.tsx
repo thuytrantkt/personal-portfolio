@@ -1,7 +1,7 @@
 "use client";
 
-import useBreakpoint from "@/hooks/useBreakpoints";
-import { NAVOGATION_LIST_ITEMS } from "@/utils/constants";
+import useBreakpoint from "@/_hooks/useBreakpoints";
+import { NAVOGATION_LIST_ITEMS } from "@/_utils/constants";
 import { List, ListItem, ListItemButton } from "@mui/joy";
 
 const NavigationListItems = ({

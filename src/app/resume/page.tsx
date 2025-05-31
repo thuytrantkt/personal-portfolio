@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero/Hero";
+import Hero from "@/_components/Hero/Hero";
 
 export default function Resume() {
   return (

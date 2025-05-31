@@ -1,4 +1,4 @@
-import { BREAKPOINTS } from "@/utils/constants";
+import { BREAKPOINTS } from "@/_utils/constants";
 import { useWindowSize } from "@uidotdev/usehooks";
 
 /* Use the BREAKPOINTS keys as the possible values: */

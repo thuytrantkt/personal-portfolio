@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { inter } from "../ui/fonts";
+import { inter } from "../_ui/fonts";
 import "./global.css";
-import { EmailIcon, GitHubIcon, LinkedInIcon } from "./assets/icons";
+import { EmailIcon, GitHubIcon, LinkedInIcon } from "../_assets/icons";
 import { Link } from "@mui/material";
-import Navigation from "@/components/Navigation/Navigation";
-import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
+import Navigation from "@/_components/Navigation/Navigation";
+import ThemeRegistry from "@/_components/ThemeRegistry/ThemeRegistry";
 import { Typography } from "@mui/joy";
 export const metadata: Metadata = {
   title: "Thuy Tran's portfolio",
