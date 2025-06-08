@@ -1,5 +1,5 @@
-import useBreakpoint from "@/_hooks/useBreakpoints";
-import { NAVOGATION_LIST_ITEMS } from "@/_utils/constants";
+import useBreakpoint from "hooks/useBreakpoints";
+import { NAVOGATION_LIST_ITEMS } from "utils/constants";
 import { List, ListItem, ListItemButton } from "@mui/joy";
 import Link from "next/link";
 

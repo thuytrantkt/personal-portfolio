@@ -1,5 +1,5 @@
 import { Chip, Typography } from "@mui/joy";
-import "@/_assets/stylesheets/hero.css";
+import "@/assets/stylesheets/hero.css";
 
 const Hero = ({
   heading,

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { inter } from "../_assets/stylesheets/fonts";
+import { inter } from "../assets/stylesheets/fonts";
 import "./global.css";
-import { EmailIcon, GitHubIcon, LinkedInIcon } from "../_assets/icons";
-import Navigation from "@/_components/Navigation/Navigation";
-import ThemeRegistry from "@/_components/ThemeRegistry/ThemeRegistry";
+import { EmailIcon, GitHubIcon, LinkedInIcon } from "../assets/icons";
+import Navigation from "components/Navigation/Navigation";
+import ThemeRegistry from "components/ThemeRegistry/ThemeRegistry";
 import { Typography } from "@mui/joy";
 import Link from "next/link";
 export const metadata: Metadata = {

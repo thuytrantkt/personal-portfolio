@@ -1,9 +1,9 @@
 "use client";
 
 import { Card, CardContent, List, ListItem, Typography } from "@mui/joy";
-import "../../_assets/stylesheets/academics.css";
-import useBreakpoint from "../../_hooks/useBreakpoints";
-import Hero from "@/_components/Hero/Hero";
+import "../../assets/stylesheets/academics.css";
+import useBreakpoint from "../../hooks/useBreakpoints";
+import Hero from "components/Hero/Hero";
 
 export default function Academics() {
   const lgScreen = useBreakpoint("lg");
