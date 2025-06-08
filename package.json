@@ -14,10 +14,13 @@
     "@mui/icons-material": "^7.1.0",
     "@mui/joy": "^5.0.0-beta.52",
     "@mui/material": "^7.1.0",
+    "@tailwindcss/postcss": "^4.1.8",
     "@uidotdev/usehooks": "^2.4.1",
     "next": "15.3.2",
+    "postcss": "^8.5.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

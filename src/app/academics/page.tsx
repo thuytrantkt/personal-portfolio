@@ -1,13 +1,9 @@
 "use client";
 
 import { Card, CardContent, List, ListItem, Typography } from "@mui/joy";
-import "../../assets/stylesheets/academics.css";
-import useBreakpoint from "../../hooks/useBreakpoints";
 import Hero from "components/Hero/Hero";
 
 export default function Academics() {
-  const lgScreen = useBreakpoint("lg");
-
   return (
     <>
       <Hero
@@ -24,11 +20,7 @@ export default function Academics() {
       >
         Education
       </Typography>
-      <div
-        className={`${
-          lgScreen ? "education-container--lg" : "education-container"
-        }`}
-      >
+      <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[var(--academic-grid-cols-3)] lg:gap-4 pb-24">
         <Card variant="solid">
           <CardContent>
             <Typography level="title-lg" textColor="inherit">
@@ -83,11 +75,7 @@ export default function Academics() {
         Certifications
       </Typography>
 
-      <div
-        className={`${
-          lgScreen ? "certificates-container--lg" : "certificates-container"
-        }`}
-      >
+      <div className="flex flex-col lg:grid lg:grid-cols-[var(--academic-grid-cols-2)] gap-4 pb-24">
         <Card variant="solid">
           <CardContent>
             <Typography textColor="inherit">
