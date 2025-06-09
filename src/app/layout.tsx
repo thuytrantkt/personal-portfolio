@@ -32,6 +32,7 @@ export default function RootLayout({
               <div>{children}</div>
             </div>
             <footer className="flex flex-col justify-end items-center gap-4">
+              <span className="border-solid border-[1px] border-neutral-100 w-screen mb-6" />
               <div className="flex flex-[1_1_50%] flex-col md:flex-row md:justify-between items-center md:self-stretch gap-4">
                 <div className="flex flex-col gap-2 max-md:items-center max-md:text-center">
                   <p>TKT</p>
