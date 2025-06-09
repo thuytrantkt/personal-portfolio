@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeRegistry options={{ key: "joy" }}>
-          <main className="flex flex-col pt-0 px-4 pb-4 md:px-8 md:pb-8 lg:px-16 lg:pt-8 h-screen">
+          <main className="flex flex-col pt-0 px-4 pb-4 md:px-8 md:pb-8 lg:px-16 lg:pb-8 h-screen">
             <header className="flex justify-between">
               <p>TKT</p>
               <Navigation />
