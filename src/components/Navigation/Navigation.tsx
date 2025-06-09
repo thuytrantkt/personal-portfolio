@@ -25,6 +25,7 @@ const Navigation = () => {
 
   const handleItemSelected = (value: string) => {
     setSelected(value);
+    handleCloseDrawerMobile();
   };
 
   useEffect(() => {
