@@ -23,13 +23,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeRegistry options={{ key: "joy" }}>
-          <main className="flex flex-col pt-0 px-4 pb-4 md:px-8 md:pb-8 lg:px-16 lg:pb-8 h-screen">
-            <header className="flex justify-between">
-              <p>TKT</p>
-              <Navigation />
-            </header>
-            <div>{children}</div>
-            <footer className="flex flex-col items-center gap-4">
+          <main className="flex flex-col justify-between pt-0 px-4 pb-4 md:px-8 md:pb-8 lg:px-16 lg:pb-8 h-screen">
+            <div>
+              <header className="flex justify-between">
+                <p>TKT</p>
+                <Navigation />
+              </header>
+              <div>{children}</div>
+            </div>
+            <footer className="flex flex-col justify-end items-center gap-4">
               <div className="flex flex-[1_1_50%] flex-col md:flex-row md:justify-between items-center md:self-stretch gap-4">
                 <div className="flex flex-col gap-2 max-md:items-center max-md:text-center">
                   <p>TKT</p>
