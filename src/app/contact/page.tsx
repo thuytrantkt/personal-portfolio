@@ -15,15 +15,11 @@ import {
   Textarea,
   Typography,
 } from "@mui/joy";
-import { EmailIcon, GitHubIcon, LinkedInIcon, SendIcon } from "../assets/icons";
+import { EmailIcon, GitHubIcon, LinkedInIcon, SendIcon } from "assets/icons";
 import Link from "next/link";
-import "../../ui/contact.css";
-import useBreakpoint from "../../hooks/useBreakpoints";
 import Hero from "@/components/Hero/Hero";
 
 export default function Contact() {
-  const lgScreen = useBreakpoint("lg");
-
   return (
     <>
       <Hero
@@ -31,11 +27,7 @@ export default function Contact() {
         subhead="Contact Me"
         description="Feel free to reach out to me for collaboration, questions, or just to say hello. I'm open to discussing new projects, creative ideas, or opportunities."
       />
-      <div
-        className={`${
-          lgScreen ? "contact-body-container--lg" : "contact-body-container"
-        }`}
-      >
+      <div className="grid grid-cols-[1fr] lg:grid-cols-[var(--contact-grid-cols-2)] gap-8 pb-24">
         <Card variant="outlined">
           <Typography level="title-lg">Contact Information</Typography>
           <Typography>

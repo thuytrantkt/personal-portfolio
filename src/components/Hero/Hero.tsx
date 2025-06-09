@@ -1,5 +1,4 @@
 import { Chip, Typography } from "@mui/joy";
-import "../../ui/hero.css";
 
 const Hero = ({
   heading,
@@ -11,7 +10,7 @@ const Hero = ({
   description: string;
 }) => {
   return (
-    <div className="hero-container">
+    <div className="flex flex-col justify-items-center items-center py-16">
       <Chip color="success" variant="soft">
         <Typography level="body-sm" component="h1">
           {heading}

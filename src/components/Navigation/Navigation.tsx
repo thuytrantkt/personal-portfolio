@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import useBreakpoint from "@/hooks/useBreakpoints";
 import Menu from "@mui/icons-material/Menu";
 import { IconButton } from "@mui/joy";
-import DrawerMobileNavigation from "./DrawerMobileNavigation";
 import NavigationListItems from "./NavigationListIems";
 import { usePathname } from "next/navigation";
+import DrawerMobileNavigation from "./DrawerMobileNavigation";
 
 const Navigation = () => {
   const lgScreen = useBreakpoint("lg");
@@ -29,7 +29,6 @@ const Navigation = () => {
 
   useEffect(() => {
     const currentPath = pathname.split("/").filter((item) => item !== "");
-    console.log("currentPath", currentPath);
     if (currentPath.length > 0) {
       setSelected(currentPath[0]);
     }
