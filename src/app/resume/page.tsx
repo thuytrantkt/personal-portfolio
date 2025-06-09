@@ -28,7 +28,7 @@ import { useState } from "react";
 
 export default function Resume() {
   const [isDownloadLoading, setIsDownloadLoading] = useState(false);
-  const [isDownloadSuccess, setIsDownloadSuccess] = useState(false);
+  const [isDownloadSuccess] = useState(false);
   const [activeTab, setActiveTab] = useState<number>(0);
 
   const handleDownloadResumeClick = () => {
