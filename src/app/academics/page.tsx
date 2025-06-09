@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent, List, ListItem, Typography } from "@mui/joy";
-import Hero from "components/Hero/Hero";
+import Hero from "@/components/Hero/Hero";
 
 export default function Academics() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import useBreakpoint from "hooks/useBreakpoints";
+import useBreakpoint from "@/hooks/useBreakpoints";
 import Menu from "@mui/icons-material/Menu";
 import { IconButton } from "@mui/joy";
 import NavigationListItems from "./NavigationListIems";

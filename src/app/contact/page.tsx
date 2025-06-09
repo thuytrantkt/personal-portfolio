@@ -17,7 +17,7 @@ import {
 } from "@mui/joy";
 import { EmailIcon, GitHubIcon, LinkedInIcon, SendIcon } from "assets/icons";
 import Link from "next/link";
-import Hero from "components/Hero/Hero";
+import Hero from "@/components/Hero/Hero";
 
 export default function Contact() {
   return (

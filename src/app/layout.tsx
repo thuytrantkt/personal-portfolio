@@ -3,10 +3,10 @@ import Link from "next/link";
 import { Typography } from "@mui/joy";
 
 import { inter } from "../assets/stylesheets/fonts";
-import { EmailIcon, GitHubIcon, LinkedInIcon } from "../assets/icons";
+import { EmailIcon, GitHubIcon, LinkedInIcon } from "@/assets/icons";
 
-import Navigation from "components/Navigation/Navigation";
-import ThemeRegistry from "components/ThemeRegistry/ThemeRegistry";
+import Navigation from "@/components/Navigation/Navigation";
+import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
 import "./global.css";
 
 export const metadata: Metadata = {
