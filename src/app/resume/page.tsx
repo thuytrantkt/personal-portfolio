@@ -24,22 +24,18 @@ import {
   Typography,
 } from "@mui/joy";
 import Hero from "components/Hero/Hero";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Resume() {
-  const [isDownloadLoading, setIsDownloadLoading] = useState(false);
-  const [isDownloadSuccess] = useState(false);
+  const [downloadFileStatus, setDownloadFileStatus] = useState<
+    "loading" | "sucess" | "error" | ""
+  >("");
   const [activeTab, setActiveTab] = useState<number>(0);
 
   const handleDownloadResumeClick = () => {
-    console.log("Downloaded");
-    setIsDownloadLoading(true);
-
-    /** Once download successfully, then update the following:
-     *  1. Set the loading back to false
-     *  2. Set the success to true
-     */
-    /** TODO */
+    setDownloadFileStatus("loading");
+    // Simulate a file download process
   };
   return (
     <div className="flex flex-col justify-center">
@@ -48,28 +44,34 @@ export default function Resume() {
         subhead="Professional Experience"
         description="I'm an aspiring developer specializing in web development, AI, and machine learning. My goal is to leverage these technologies to create innovative solutions for real-world problems."
       />
-      <Button
-        startDecorator={
-          !isDownloadLoading &&
-          !isDownloadSuccess && (
-            <FileDownloadOutlined aria-labelledby="File download icon" />
-          )
-        }
-        variant="solid"
-        color={!isDownloadLoading && isDownloadSuccess ? "success" : "primary"}
-        size="md"
-        onClick={handleDownloadResumeClick}
-        loading={isDownloadLoading && !isDownloadSuccess}
-        endDecorator={
-          !isDownloadLoading &&
-          isDownloadSuccess && (
-            <FileDownloadDoneOutlined aria-labelledby="File download done icon" />
-          )
-        }
-        className="w-fit self-center"
+      <Link
+        href="/assets/thuy-tran-software-developer-resume.pdf"
+        target="_blank"
+        className="text-center text-blue-500 underline mb-4"
+        rel="noopener noreferrer"
+        download
       >
-        Download Resume
-      </Button>
+        <Button
+          startDecorator={
+            !downloadFileStatus && (
+              <FileDownloadOutlined aria-labelledby="File download icon" />
+            )
+          }
+          variant="solid"
+          color={downloadFileStatus === "sucess" ? "success" : "primary"}
+          size="md"
+          onClick={handleDownloadResumeClick}
+          loading={downloadFileStatus === "loading"}
+          endDecorator={
+            downloadFileStatus === "sucess" && (
+              <FileDownloadDoneOutlined aria-labelledby="File download done icon" />
+            )
+          }
+          className="w-fit self-center"
+        >
+          Download Resume
+        </Button>
+      </Link>
       <Tabs
         aria-label="Resume content tabs"
         defaultValue={0}
