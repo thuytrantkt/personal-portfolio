@@ -1,5 +1,7 @@
 "use client";
 
+import React, { useRef, useState } from "react";
+import axios from "axios";
 import {
   BusinessCenterOutlined,
   CodeOutlined,
@@ -25,18 +27,88 @@ import {
 } from "@mui/joy";
 import Hero from "components/Hero/Hero";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Resume() {
+  const linkRef = useRef<HTMLAnchorElement>(null);
+
   const [downloadFileStatus, setDownloadFileStatus] = useState<
     "loading" | "sucess" | "error" | ""
   >("");
   const [activeTab, setActiveTab] = useState<number>(0);
 
-  const handleDownloadResumeClick = () => {
+  const handleDownloadResumeClick = async (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    currentLink: React.Ref<HTMLAnchorElement> | null
+  ) => {
+    event.preventDefault();
     setDownloadFileStatus("loading");
-    // Simulate a file download process
+
+    const filePath = "/assets/thuy-tran-software-developer-resume.pdf";
+
+    try {
+      const response = await axios({
+        url: filePath,
+        method: "GET",
+        responseType: "blob", // Must set responseType: 'blob' to handle binary data (like PDFs or images)
+        headers: {
+          "Content-Type": "application/pdf",
+        },
+      });
+      if (response.status !== 200) {
+        throw new Error("Failed to download file");
+      }
+      if (!response.data) {
+        throw new Error("No data received from the file download");
+      }
+
+      // Create a blob URL and trigger download
+      const blob = new Blob([response.data], {
+        type: "application/pdf",
+      });
+      // Create a URL for the blob
+      // This is necessary to create a downloadable link in the browser
+      // window.URL.createObjectURL creates a URL that points to the blob data
+      // This URL can be used as the href for an anchor tag to download the file
+      // The URL will be revoked after the download is triggered to free up memory
+      const url = window.URL.createObjectURL(blob);
+
+      if (currentLink && "current" in currentLink && currentLink.current) {
+        currentLink.current.href = url;
+        currentLink.current.download =
+          "thuy-tran-software-developer-resume.pdf";
+        currentLink.current.click();
+        setTimeout(() => {
+          window.URL.revokeObjectURL(url);
+        }, 100); // Revoke the URL after a short delay to ensure download is triggered
+      }
+      setDownloadFileStatus("sucess");
+    } catch (error) {
+      console.error("Error downloading file:", error);
+      setDownloadFileStatus("error");
+      throw new Error("Failed to download file");
+    }
   };
+
+  const downloadFileColorUpdate = () => {
+    if (downloadFileStatus === "sucess") {
+      return "success";
+    } else if (downloadFileStatus === "error") {
+      return "danger";
+    }
+    return "primary";
+  };
+
+  const downloadFileTextUpdate = () => {
+    if (downloadFileStatus === "loading") {
+      return "Downloading...";
+    } else if (downloadFileStatus === "sucess") {
+      return "Resume Downloaded";
+    } else if (downloadFileStatus === "error") {
+      return "Try Again";
+    }
+    return "Download Resume";
+  };
+
   return (
     <div className="flex flex-col justify-center">
       <Hero
@@ -44,34 +116,33 @@ export default function Resume() {
         subhead="Professional Experience"
         description="I'm an aspiring developer specializing in web development, AI, and machine learning. My goal is to leverage these technologies to create innovative solutions for real-world problems."
       />
-      <Link
-        href="/assets/thuy-tran-software-developer-resume.pdf"
-        target="_blank"
-        className="text-center text-blue-500 underline mb-4"
-        rel="noopener noreferrer"
-        download
+      <a ref={linkRef} className="sr-only">
+        Hidden download link for resume
+      </a>
+
+      <Button
+        startDecorator={
+          !downloadFileStatus && (
+            <FileDownloadOutlined aria-labelledby="File download icon" />
+          )
+        }
+        variant={downloadFileStatus === "error" ? "outlined" : "solid"}
+        color={downloadFileColorUpdate()}
+        size="md"
+        loading={downloadFileStatus === "loading"}
+        endDecorator={
+          downloadFileStatus === "sucess" && (
+            <FileDownloadDoneOutlined aria-labelledby="File download done icon" />
+          )
+        }
+        className="w-fit self-center"
+        onClick={(event: React.MouseEvent<HTMLAnchorElement>) =>
+          handleDownloadResumeClick(event, linkRef)
+        }
       >
-        <Button
-          startDecorator={
-            !downloadFileStatus && (
-              <FileDownloadOutlined aria-labelledby="File download icon" />
-            )
-          }
-          variant="solid"
-          color={downloadFileStatus === "sucess" ? "success" : "primary"}
-          size="md"
-          onClick={handleDownloadResumeClick}
-          loading={downloadFileStatus === "loading"}
-          endDecorator={
-            downloadFileStatus === "sucess" && (
-              <FileDownloadDoneOutlined aria-labelledby="File download done icon" />
-            )
-          }
-          className="w-fit self-center"
-        >
-          Download Resume
-        </Button>
-      </Link>
+        {downloadFileTextUpdate()}
+      </Button>
+
       <Tabs
         aria-label="Resume content tabs"
         defaultValue={0}
