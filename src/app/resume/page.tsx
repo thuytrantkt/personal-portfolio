@@ -26,7 +26,6 @@ import {
   Typography,
 } from "@mui/joy";
 import Hero from "components/Hero/Hero";
-import Link from "next/link";
 
 export default function Resume() {
   const linkRef = useRef<HTMLAnchorElement>(null);
