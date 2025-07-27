@@ -569,7 +569,7 @@ export default function Resume() {
                   <li>
                     Developed a solution that align seamlessly with the GNB
                     Design System, ensuring a consistent and user-friendly
-                    interface. Furthermore, it adheres rigorously to SNB's
+                    interface. Furthermore, it adheres rigorously to SNB&lsquo;s
                     standards, encompassing language, security, privacy, and
                     accessibility, guaranteeing a robust and compliant product
                     that meets all regulatory requirements.
@@ -612,8 +612,8 @@ export default function Resume() {
                   <li>
                     Worked closely and collaboratively with the external team to
                     identify and agree upon key areas of knowledge transfer as
-                    the client’s team sets up internal capabilities to support
-                    and grow the PR Digital product.
+                    the client&lsquo;s team sets up internal capabilities to
+                    support and grow the PR Digital product.
                   </li>
                   <li>
                     Managed day-to-day execution of project plan, reported
@@ -675,19 +675,19 @@ export default function Resume() {
                     globally alongside SEO specialists and the translation team
                     to provide localized content via the Argo system. Migrate
                     several legacy existing marketing pages to Remixing
-                    Hydrogen, Shopify's React-based headless commerce stack that
-                    features a better performance with advancements like
-                    optimistic UI, nested routes, and progressive enhancement.
-                    GraphQL.
+                    Hydrogen, Shopify&lsquo;s React-based headless commerce
+                    stack that features a better performance with advancements
+                    like optimistic UI, nested routes, and progressive
+                    enhancement. GraphQL.
                   </li>
                   <li>
                     Redesign and restructure the existing marketing pages' web
                     experience by using the Flipper UI feature flag to manage
                     complex version controls in a large scope of project and
                     feature experiments. Develop an A/B test for Shopify
-                    Capital's UI experience to increase the conversion rate with
-                    a lift of 11% representing $1.7M+ estimated incremental
-                    funding opportunity annually. GraphQL.
+                    Capital&lsquo;s UI experience to increase the conversion
+                    rate with a lift of 11% representing $1.7M+ estimated
+                    incremental funding opportunity annually. GraphQL.
                   </li>
                   <li>
                     Collaborate with Agile cross-functional teams of engineers,
