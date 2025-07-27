@@ -681,10 +681,10 @@ export default function Resume() {
                     enhancement. GraphQL.
                   </li>
                   <li>
-                    Redesign and restructure the existing marketing pages' web
-                    experience by using the Flipper UI feature flag to manage
-                    complex version controls in a large scope of project and
-                    feature experiments. Develop an A/B test for Shopify
+                    Redesign and restructure the existing marketing pages&lsquo;
+                    web experience by using the Flipper UI feature flag to
+                    manage complex version controls in a large scope of project
+                    and feature experiments. Develop an A/B test for Shopify
                     Capital&lsquo;s UI experience to increase the conversion
                     rate with a lift of 11% representing $1.7M+ estimated
                     incremental funding opportunity annually. GraphQL.
