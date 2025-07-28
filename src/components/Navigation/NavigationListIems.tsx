@@ -1,7 +1,7 @@
 "use client";
 
 import useBreakpoint from "@/hooks/useBreakpoints";
-import { NAVOGATION_LIST_ITEMS } from "@/utils/constants";
+import { NAVIGATION_LIST_ITEMS } from "@/utils/constants";
 import { List, ListItem, ListItemButton } from "@mui/joy";
 import Link from "next/link";
 
@@ -20,7 +20,7 @@ const NavigationListItems = ({
 
   return (
     <List sx={customListStylesOnLgScreen}>
-      {NAVOGATION_LIST_ITEMS.map((item) => (
+      {NAVIGATION_LIST_ITEMS.map((item) => (
         <ListItem key={item.name}>
           <Link href={item.href}>
             <ListItemButton
