@@ -7,10 +7,7 @@ import {
   CodeOutlined,
   FileDownloadDoneOutlined,
   FileDownloadOutlined,
-  LanguageOutlined,
-  MemoryOutlined,
   SchoolOutlined,
-  SettingsOutlined,
   WorkspacePremiumOutlined,
 } from "@mui/icons-material";
 import {
@@ -24,8 +21,16 @@ import {
   Card,
   CardContent,
   Typography,
+  List,
+  ListItem,
 } from "@mui/joy";
 import Hero from "components/Hero/Hero";
+import {
+  ICON_IMAGE_PATHS_BE,
+  ICON_IMAGE_PATHS_FE,
+  ICON_IMAGE_PATHS_TOOLS,
+} from "@/components/IconImage/constant";
+import IconImage from "@/components/IconImage/IconImage";
 
 export default function Resume() {
   const linkRef = useRef<HTMLAnchorElement>(null);
@@ -33,7 +38,10 @@ export default function Resume() {
   const [downloadFileStatus, setDownloadFileStatus] = useState<
     "loading" | "sucess" | "error" | ""
   >("");
-  const [activeTab, setActiveTab] = useState<number>(0);
+  const [activeTabOnResume, setActiveTabOnResume] = useState<number>(0);
+  const [activeTabOnSkills, setActiveTabOnSkills] = useState<number>(0);
+
+  console.log(Object.keys(ICON_IMAGE_PATHS_FE).sort());
 
   const handleDownloadResumeClick = async (
     event: React.MouseEvent<HTMLAnchorElement>,
@@ -146,8 +154,8 @@ export default function Resume() {
         aria-label="Resume content tabs"
         defaultValue={0}
         sx={{ bgcolor: "transparent", marginTop: "64px" }}
-        value={activeTab}
-        onChange={(event, value) => setActiveTab(value as number)}
+        value={activeTabOnResume}
+        onChange={(event, value) => setActiveTabOnResume(value as number)}
       >
         <TabList
           disableUnderline
@@ -164,6 +172,8 @@ export default function Resume() {
               boxShadow: "sm",
               bgcolor: "background.level1",
             },
+            display: "flex",
+            flexWrap: "wrap",
           }}
         >
           <Tab disableIndicator>
@@ -201,157 +211,206 @@ export default function Resume() {
         {/* Skills */}
         <TabPanel value={0}>
           <div className="flex flex-col gap-8">
-            <div className="flex flex-col lg:grid lg:grid-cols-[var(--academic-grid-cols-2)] gap-4">
+            <div className="flex flex-col gap-4">
               <Card variant="solid">
                 <CardContent>
-                  <div className="flex gap-6">
-                    <MemoryOutlined aria-labelledby="Memory icon" />
-                    <div>
-                      <Typography level="title-lg" textColor="inherit">
-                        Web Developer
-                      </Typography>
-                      <Typography textColor="inherit">
-                        Experienced in building web applications using react
-                        framework and plain HTML and CSS
-                      </Typography>
-                    </div>
-                  </div>
+                  <Typography
+                    level="title-lg"
+                    textColor="inherit"
+                    startDecorator={
+                      <CodeOutlined aria-labelledby="Code icon" />
+                    }
+                  >
+                    Technical Stack
+                  </Typography>
+                  <Tabs
+                    aria-label="Skills content tabs"
+                    defaultValue={0}
+                    sx={{ bgcolor: "transparent", marginTop: "48px" }}
+                    value={activeTabOnSkills}
+                    onChange={(event, value) =>
+                      setActiveTabOnSkills(value as number)
+                    }
+                  >
+                    <TabList
+                      disableUnderline
+                      sx={{
+                        p: 0.5,
+                        gap: 1.5,
+                        borderRadius: "md",
+                        justifyContent: "center",
+                        [`& .${tabClasses.root}[aria-selected="true"]`]: {
+                          boxShadow: "sm",
+                          bgcolor: "background.level3",
+                        },
+                        [`& .${tabClasses.root}[aria-selected="false"]`]: {
+                          boxShadow: "sm",
+                          bgcolor: "background.level1",
+                        },
+                        display: "flex",
+                        flexWrap: "wrap",
+                      }}
+                    >
+                      <Tab disableIndicator>
+                        <ListItemDecorator>
+                          <CodeOutlined aria-labelledby="Code icon" />
+                        </ListItemDecorator>
+                        Front End
+                      </Tab>
+                      <Tab disableIndicator>
+                        <ListItemDecorator>
+                          <SchoolOutlined aria-labelledby="School icon" />
+                        </ListItemDecorator>
+                        Back End
+                      </Tab>
+                      <Tab disableIndicator>
+                        <ListItemDecorator>
+                          <BusinessCenterOutlined aria-labelledby="Business center icon" />
+                        </ListItemDecorator>
+                        Tools
+                      </Tab>
+                    </TabList>
+
+                    {/* Front End */}
+                    <TabPanel value={0}>
+                      <Card variant="solid">
+                        <CardContent>
+                          <ul className="flex justify-center lg:justify-between gap-8 xl:px-30 py-6 flex-wrap">
+                            {Object.keys(ICON_IMAGE_PATHS_FE)
+                              .sort()
+                              .map((key) => (
+                                <li
+                                  className="flex flex-col items-center gap-3 w-20"
+                                  key={key}
+                                >
+                                  <IconImage
+                                    src={ICON_IMAGE_PATHS_FE[key]}
+                                    alt={key}
+                                  />
+                                  {key}
+                                </li>
+                              ))}
+                          </ul>
+                        </CardContent>
+                      </Card>
+                    </TabPanel>
+
+                    {/* Back End */}
+                    <TabPanel value={1}>
+                      <Card variant="solid">
+                        <CardContent>
+                          <ul className="flex justify-center lg:justify-between gap-8 xl:px-30 py-6 flex-wrap">
+                            {Object.keys(ICON_IMAGE_PATHS_BE)
+                              .sort()
+                              .map((key) => (
+                                <li
+                                  className="flex flex-col items-center gap-3 w-20"
+                                  key={key}
+                                >
+                                  <IconImage
+                                    src={ICON_IMAGE_PATHS_BE[key]}
+                                    alt={key}
+                                  />
+                                  {key}
+                                </li>
+                              ))}
+                          </ul>
+                        </CardContent>
+                      </Card>
+                    </TabPanel>
+
+                    {/* Tools */}
+                    <TabPanel value={2}>
+                      <Card variant="solid">
+                        <CardContent>
+                          <ul className="flex flex-wrap justify-center gap-8 lg:grid lg:grid-cols-[var(--academic-grid-cols-4)] lg:justify-items-center xl:px-30 py-6">
+                            {Object.keys(ICON_IMAGE_PATHS_TOOLS)
+                              .sort()
+                              .map((key) => (
+                                <li
+                                  className="flex flex-col items-center gap-3 w-20"
+                                  key={key}
+                                >
+                                  <IconImage
+                                    src={ICON_IMAGE_PATHS_TOOLS[key]}
+                                    alt={key}
+                                  />
+                                  <p className="text-center">{key}</p>
+                                </li>
+                              ))}
+                          </ul>
+                        </CardContent>
+                      </Card>
+                    </TabPanel>
+                  </Tabs>
                 </CardContent>
               </Card>
+
               <Card variant="solid">
                 <CardContent>
-                  <div className="flex gap-6">
-                    <CodeOutlined aria-labelledby="Code icon" />
-                    <div>
-                      <Typography level="title-lg" textColor="inherit">
-                        Full-Stack Developer
-                      </Typography>
-                      <Typography textColor="inherit">
-                        Proficient in both front-end and back-end technologies,
-                        creating complete web solutions
-                      </Typography>
-                    </div>
+                  <Typography
+                    level="title-lg"
+                    textColor="inherit"
+                    sx={{ paddingBottom: 5 }}
+                  >
+                    Soft Skills
+                  </Typography>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <Card>
+                      <CardContent>
+                        <Typography level="title-lg" textColor="inherit">
+                          Problem Solving
+                        </Typography>
+                        <Typography textColor="inherit">
+                          Analytical approach to complex technical challenges
+                        </Typography>
+                      </CardContent>
+                    </Card>
+
+                    <Card>
+                      <CardContent>
+                        <Typography level="title-lg" textColor="inherit">
+                          Communication
+                        </Typography>
+                        <Typography textColor="inherit">
+                          Clear technical and non-technical communication
+                        </Typography>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent>
+                        <Typography level="title-lg" textColor="inherit">
+                          Team Collaboration
+                        </Typography>
+                        <Typography textColor="inherit">
+                          Effective work in cross-functional teams
+                        </Typography>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent>
+                        <Typography level="title-lg" textColor="inherit">
+                          Time Management
+                        </Typography>
+                        <Typography textColor="inherit">
+                          Efficient project delivery within deadlines
+                        </Typography>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent>
+                        <Typography level="title-lg" textColor="inherit">
+                          Critical Thinking
+                        </Typography>
+                        <Typography textColor="inherit">
+                          Analytical evaluation of solutions and approaches
+                        </Typography>
+                      </CardContent>
+                    </Card>
                   </div>
                 </CardContent>
               </Card>
             </div>
-            <Card variant="solid">
-              <CardContent>
-                <Typography
-                  level="title-lg"
-                  textColor="inherit"
-                  startDecorator={<CodeOutlined aria-labelledby="Code icon" />}
-                >
-                  Technical Stack
-                </Typography>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>TailwindCSS</li>
-                  <li>SASS</li>
-                  <li>JavaScript</li>
-                  <li>TypeScript</li>
-                  <li>Ruby</li>
-                  <li>React Native</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card variant="solid">
-              <CardContent>
-                <Typography
-                  level="title-lg"
-                  textColor="inherit"
-                  startDecorator={
-                    <LanguageOutlined aria-labelledby="Language icon" />
-                  }
-                >
-                  Frameworks & Libraries
-                </Typography>
-                <ul>
-                  <li>React.js</li>
-                  <li>Node.js</li>
-                  <li>Next.js</li>
-                  <li>Express.js</li>
-                  <li>Ruby on Rails</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card variant="solid">
-              <CardContent>
-                <Typography
-                  level="title-lg"
-                  textColor="inherit"
-                  startDecorator={
-                    <SettingsOutlined aria-labelledby="Settings icon" />
-                  }
-                >
-                  Tools & Technologies
-                </Typography>
-                <ul>
-                  <li>Git</li>
-                  <li>GitHub</li>
-                  <li>Figma</li>
-                  <li>Visual Studio Code</li>
-                  <li>Postman</li>
-                  <li>Confluence</li>
-                  <li>Jira</li>
-                  <li>BitBucket</li>
-                  <li>Azure DevOps</li>
-                  <li>Azure Data Studio</li>
-                  <li>Docker</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card variant="solid">
-              <CardContent>
-                <Typography level="title-lg" textColor="inherit">
-                  Soft Skills
-                </Typography>
-                <ul>
-                  <li>
-                    <Typography level="title-lg" textColor="inherit">
-                      Problem Solving
-                    </Typography>
-                    <Typography textColor="inherit">
-                      Analytical approach to complex technical challenges
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography level="title-lg" textColor="inherit">
-                      Communication
-                    </Typography>
-                    <Typography textColor="inherit">
-                      Clear technical and non-technical communication
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography level="title-lg" textColor="inherit">
-                      Team Collaboration
-                    </Typography>
-                    <Typography textColor="inherit">
-                      Effective work in cross-functional teams
-                    </Typography>
-                  </li>
-                  <li>Leadership</li>
-                  <li>
-                    <Typography level="title-lg" textColor="inherit">
-                      Time Management
-                    </Typography>
-                    <Typography textColor="inherit">
-                      Efficient project delivery within deadlines
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography level="title-lg" textColor="inherit">
-                      Critical Thinking
-                    </Typography>
-                    <Typography textColor="inherit">
-                      Analytical evaluation of solutions and approaches
-                    </Typography>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
           </div>
         </TabPanel>
 
@@ -810,6 +869,13 @@ export default function Resume() {
                   Amazon Web Services Training and Certification
                 </Typography>
                 <Typography textColor="inherit">2025</Typography>
+                <Typography textColor="inherit">
+                  A fundamental understanding of IT services and their uses in
+                  the AWS Cloud. This certificate demonstrated cloud fluency and
+                  foundational AWS knowledge. The certified practitioner is able
+                  to identify essential AWS services necessary to set up
+                  AWS-focused projects.
+                </Typography>
               </CardContent>
             </Card>
 
@@ -820,6 +886,20 @@ export default function Resume() {
                 </Typography>
                 <Typography textColor="inherit">Udemy</Typography>
                 <Typography textColor="inherit">2024</Typography>
+                <List marker="disc">
+                  <ListItem sx={{ color: "white" }}>
+                    Write and structure unit & integration tests
+                  </ListItem>
+                  <ListItem sx={{ color: "white" }}>
+                    Remove side effects from tests via mocking and spies
+                  </ListItem>
+                  <ListItem sx={{ color: "white" }}>
+                    Work with popular JavaScript test runners and libraries
+                  </ListItem>
+                  <ListItem sx={{ color: "white" }}>
+                    Write good tests and focus on testing core business logic
+                  </ListItem>
+                </List>
               </CardContent>
             </Card>
           </div>
