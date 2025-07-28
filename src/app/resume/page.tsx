@@ -23,6 +23,8 @@ import {
   Card,
   CardContent,
   Typography,
+  List,
+  ListItem,
 } from "@mui/joy";
 import Hero from "components/Hero/Hero";
 
@@ -782,6 +784,13 @@ export default function Resume() {
                   Amazon Web Services Training and Certification
                 </Typography>
                 <Typography textColor="inherit">2025</Typography>
+                <Typography textColor="inherit">
+                  A fundamental understanding of IT services and their uses in
+                  the AWS Cloud. This certificate demonstrated cloud fluency and
+                  foundational AWS knowledge. The certified practitioner is able
+                  to identify essential AWS services necessary to set up
+                  AWS-focused projects.
+                </Typography>
               </CardContent>
             </Card>
 
@@ -792,6 +801,20 @@ export default function Resume() {
                 </Typography>
                 <Typography textColor="inherit">Udemy</Typography>
                 <Typography textColor="inherit">2024</Typography>
+                <List marker="disc">
+                  <ListItem sx={{ color: "white" }}>
+                    Write and structure unit & integration tests
+                  </ListItem>
+                  <ListItem sx={{ color: "white" }}>
+                    Remove side effects from tests via mocking and spies
+                  </ListItem>
+                  <ListItem sx={{ color: "white" }}>
+                    Work with popular JavaScript test runners and libraries
+                  </ListItem>
+                  <ListItem sx={{ color: "white" }}>
+                    Write good tests and focus on testing core business logic
+                  </ListItem>
+                </List>
               </CardContent>
             </Card>
           </div>
