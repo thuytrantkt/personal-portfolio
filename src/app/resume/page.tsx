@@ -164,6 +164,8 @@ export default function Resume() {
               boxShadow: "sm",
               bgcolor: "background.level1",
             },
+            display: "flex",
+            flexWrap: "wrap",
           }}
         >
           <Tab disableIndicator>
@@ -201,157 +203,128 @@ export default function Resume() {
         {/* Skills */}
         <TabPanel value={0}>
           <div className="flex flex-col gap-8">
-            <div className="flex flex-col lg:grid lg:grid-cols-[var(--academic-grid-cols-2)] gap-4">
+            <div className="flex flex-col lg:grid lg:grid-cols-[var(--academic-grid-cols-2)] xl:grid-cols-[var(--academic-grid-cols-4)] gap-4">
               <Card variant="solid">
                 <CardContent>
-                  <div className="flex gap-6">
-                    <MemoryOutlined aria-labelledby="Memory icon" />
-                    <div>
-                      <Typography level="title-lg" textColor="inherit">
-                        Web Developer
-                      </Typography>
-                      <Typography textColor="inherit">
-                        Experienced in building web applications using react
-                        framework and plain HTML and CSS
-                      </Typography>
-                    </div>
-                  </div>
+                  <Typography
+                    level="title-lg"
+                    textColor="inherit"
+                    startDecorator={
+                      <CodeOutlined aria-labelledby="Code icon" />
+                    }
+                  >
+                    Technical Stack
+                  </Typography>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>TailwindCSS</li>
+                    <li>SASS</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Ruby</li>
+                    <li>React Native</li>
+                  </ul>
                 </CardContent>
               </Card>
               <Card variant="solid">
                 <CardContent>
-                  <div className="flex gap-6">
-                    <CodeOutlined aria-labelledby="Code icon" />
-                    <div>
+                  <Typography
+                    level="title-lg"
+                    textColor="inherit"
+                    startDecorator={
+                      <LanguageOutlined aria-labelledby="Language icon" />
+                    }
+                  >
+                    Frameworks & Libraries
+                  </Typography>
+                  <ul>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Next.js</li>
+                    <li>Express.js</li>
+                    <li>Ruby on Rails</li>
+                  </ul>
+                </CardContent>
+              </Card>
+              <Card variant="solid">
+                <CardContent>
+                  <Typography
+                    level="title-lg"
+                    textColor="inherit"
+                    startDecorator={
+                      <SettingsOutlined aria-labelledby="Settings icon" />
+                    }
+                  >
+                    Tools & Technologies
+                  </Typography>
+                  <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Figma</li>
+                    <li>Visual Studio Code</li>
+                    <li>Postman</li>
+                    <li>Confluence</li>
+                    <li>Jira</li>
+                    <li>BitBucket</li>
+                    <li>Azure DevOps</li>
+                    <li>Azure Data Studio</li>
+                    <li>Docker</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card variant="solid">
+                <CardContent>
+                  <Typography level="title-lg" textColor="inherit">
+                    Soft Skills
+                  </Typography>
+                  <ul>
+                    <li>
                       <Typography level="title-lg" textColor="inherit">
-                        Full-Stack Developer
+                        Problem Solving
                       </Typography>
                       <Typography textColor="inherit">
-                        Proficient in both front-end and back-end technologies,
-                        creating complete web solutions
+                        Analytical approach to complex technical challenges
                       </Typography>
-                    </div>
-                  </div>
+                    </li>
+                    <li>
+                      <Typography level="title-lg" textColor="inherit">
+                        Communication
+                      </Typography>
+                      <Typography textColor="inherit">
+                        Clear technical and non-technical communication
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography level="title-lg" textColor="inherit">
+                        Team Collaboration
+                      </Typography>
+                      <Typography textColor="inherit">
+                        Effective work in cross-functional teams
+                      </Typography>
+                    </li>
+                    <li>Leadership</li>
+                    <li>
+                      <Typography level="title-lg" textColor="inherit">
+                        Time Management
+                      </Typography>
+                      <Typography textColor="inherit">
+                        Efficient project delivery within deadlines
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography level="title-lg" textColor="inherit">
+                        Critical Thinking
+                      </Typography>
+                      <Typography textColor="inherit">
+                        Analytical evaluation of solutions and approaches
+                      </Typography>
+                    </li>
+                  </ul>
                 </CardContent>
               </Card>
             </div>
-            <Card variant="solid">
-              <CardContent>
-                <Typography
-                  level="title-lg"
-                  textColor="inherit"
-                  startDecorator={<CodeOutlined aria-labelledby="Code icon" />}
-                >
-                  Technical Stack
-                </Typography>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>TailwindCSS</li>
-                  <li>SASS</li>
-                  <li>JavaScript</li>
-                  <li>TypeScript</li>
-                  <li>Ruby</li>
-                  <li>React Native</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card variant="solid">
-              <CardContent>
-                <Typography
-                  level="title-lg"
-                  textColor="inherit"
-                  startDecorator={
-                    <LanguageOutlined aria-labelledby="Language icon" />
-                  }
-                >
-                  Frameworks & Libraries
-                </Typography>
-                <ul>
-                  <li>React.js</li>
-                  <li>Node.js</li>
-                  <li>Next.js</li>
-                  <li>Express.js</li>
-                  <li>Ruby on Rails</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card variant="solid">
-              <CardContent>
-                <Typography
-                  level="title-lg"
-                  textColor="inherit"
-                  startDecorator={
-                    <SettingsOutlined aria-labelledby="Settings icon" />
-                  }
-                >
-                  Tools & Technologies
-                </Typography>
-                <ul>
-                  <li>Git</li>
-                  <li>GitHub</li>
-                  <li>Figma</li>
-                  <li>Visual Studio Code</li>
-                  <li>Postman</li>
-                  <li>Confluence</li>
-                  <li>Jira</li>
-                  <li>BitBucket</li>
-                  <li>Azure DevOps</li>
-                  <li>Azure Data Studio</li>
-                  <li>Docker</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card variant="solid">
-              <CardContent>
-                <Typography level="title-lg" textColor="inherit">
-                  Soft Skills
-                </Typography>
-                <ul>
-                  <li>
-                    <Typography level="title-lg" textColor="inherit">
-                      Problem Solving
-                    </Typography>
-                    <Typography textColor="inherit">
-                      Analytical approach to complex technical challenges
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography level="title-lg" textColor="inherit">
-                      Communication
-                    </Typography>
-                    <Typography textColor="inherit">
-                      Clear technical and non-technical communication
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography level="title-lg" textColor="inherit">
-                      Team Collaboration
-                    </Typography>
-                    <Typography textColor="inherit">
-                      Effective work in cross-functional teams
-                    </Typography>
-                  </li>
-                  <li>Leadership</li>
-                  <li>
-                    <Typography level="title-lg" textColor="inherit">
-                      Time Management
-                    </Typography>
-                    <Typography textColor="inherit">
-                      Efficient project delivery within deadlines
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography level="title-lg" textColor="inherit">
-                      Critical Thinking
-                    </Typography>
-                    <Typography textColor="inherit">
-                      Analytical evaluation of solutions and approaches
-                    </Typography>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
           </div>
         </TabPanel>
 
