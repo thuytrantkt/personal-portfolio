@@ -8,7 +8,6 @@ import {
   FileDownloadDoneOutlined,
   FileDownloadOutlined,
   LanguageOutlined,
-  MemoryOutlined,
   SchoolOutlined,
   SettingsOutlined,
   WorkspacePremiumOutlined,
