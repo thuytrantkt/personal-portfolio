@@ -9,10 +9,8 @@
     --contact-grid-cols-2: 1fr 1.5fr;
   }
 
-  html,
-  body {
+  main {
     max-width: 1400px;
     margin: 0 auto;
-    overflow-x: hidden;
   }
 }
