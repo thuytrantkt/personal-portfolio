@@ -10,7 +10,7 @@ export const BREAKPOINTS = {
   "2xl": 1536,
 } as const;
 
-export const NAVOGATION_LIST_ITEMS = [
+export const NAVIGATION_LIST_ITEMS = [
   { name: "home", href: "/" },
   { name: "about", href: "/about" },
   { name: "projects", href: "/projects" },
