@@ -7,9 +7,7 @@ import {
   CodeOutlined,
   FileDownloadDoneOutlined,
   FileDownloadOutlined,
-  LanguageOutlined,
   SchoolOutlined,
-  SettingsOutlined,
   WorkspacePremiumOutlined,
 } from "@mui/icons-material";
 import {
@@ -27,6 +25,13 @@ import {
   ListItem,
 } from "@mui/joy";
 import Hero from "components/Hero/Hero";
+import Image from "next/image";
+import {
+  ICON_IMAGE_PATHS_BE,
+  ICON_IMAGE_PATHS_FE,
+  ICON_IMAGE_PATHS_TOOLS,
+} from "@/components/IconImage/constant";
+import IconImage from "@/components/IconImage/IconImage";
 
 export default function Resume() {
   const linkRef = useRef<HTMLAnchorElement>(null);
@@ -34,7 +39,8 @@ export default function Resume() {
   const [downloadFileStatus, setDownloadFileStatus] = useState<
     "loading" | "sucess" | "error" | ""
   >("");
-  const [activeTab, setActiveTab] = useState<number>(0);
+  const [activeTabOnResume, setActiveTabOnResume] = useState<number>(0);
+  const [activeTabOnSkills, setActiveTabOnSkills] = useState<number>(0);
 
   const handleDownloadResumeClick = async (
     event: React.MouseEvent<HTMLAnchorElement>,
@@ -147,8 +153,8 @@ export default function Resume() {
         aria-label="Resume content tabs"
         defaultValue={0}
         sx={{ bgcolor: "transparent", marginTop: "64px" }}
-        value={activeTab}
-        onChange={(event, value) => setActiveTab(value as number)}
+        value={activeTabOnResume}
+        onChange={(event, value) => setActiveTabOnResume(value as number)}
       >
         <TabList
           disableUnderline
@@ -204,7 +210,7 @@ export default function Resume() {
         {/* Skills */}
         <TabPanel value={0}>
           <div className="flex flex-col gap-8">
-            <div className="flex flex-col lg:grid lg:grid-cols-[var(--academic-grid-cols-2)] xl:grid-cols-[var(--academic-grid-cols-4)] gap-4">
+            <div className="flex flex-col gap-4">
               <Card variant="solid">
                 <CardContent>
                   <Typography
@@ -216,62 +222,128 @@ export default function Resume() {
                   >
                     Technical Stack
                   </Typography>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>TailwindCSS</li>
-                    <li>SASS</li>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                    <li>Ruby</li>
-                    <li>React Native</li>
-                  </ul>
-                </CardContent>
-              </Card>
-              <Card variant="solid">
-                <CardContent>
-                  <Typography
-                    level="title-lg"
-                    textColor="inherit"
-                    startDecorator={
-                      <LanguageOutlined aria-labelledby="Language icon" />
+                  <Tabs
+                    aria-label="Skills content tabs"
+                    defaultValue={0}
+                    sx={{ bgcolor: "transparent", marginTop: "64px" }}
+                    value={activeTabOnSkills}
+                    onChange={(event, value) =>
+                      setActiveTabOnSkills(value as number)
                     }
                   >
-                    Frameworks & Libraries
-                  </Typography>
-                  <ul>
-                    <li>React.js</li>
-                    <li>Node.js</li>
-                    <li>Next.js</li>
-                    <li>Express.js</li>
-                    <li>Ruby on Rails</li>
-                  </ul>
-                </CardContent>
-              </Card>
-              <Card variant="solid">
-                <CardContent>
-                  <Typography
-                    level="title-lg"
-                    textColor="inherit"
-                    startDecorator={
-                      <SettingsOutlined aria-labelledby="Settings icon" />
-                    }
-                  >
-                    Tools & Technologies
-                  </Typography>
-                  <ul>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>Figma</li>
-                    <li>Visual Studio Code</li>
-                    <li>Postman</li>
-                    <li>Confluence</li>
-                    <li>Jira</li>
-                    <li>BitBucket</li>
-                    <li>Azure DevOps</li>
-                    <li>Azure Data Studio</li>
-                    <li>Docker</li>
-                  </ul>
+                    <TabList
+                      disableUnderline
+                      sx={{
+                        p: 0.5,
+                        gap: 1.5,
+                        borderRadius: "md",
+                        justifyContent: "center",
+                        [`& .${tabClasses.root}[aria-selected="true"]`]: {
+                          boxShadow: "sm",
+                          bgcolor: "background.level3",
+                        },
+                        [`& .${tabClasses.root}[aria-selected="false"]`]: {
+                          boxShadow: "sm",
+                          bgcolor: "background.level1",
+                        },
+                        display: "flex",
+                        flexWrap: "wrap",
+                      }}
+                    >
+                      <Tab disableIndicator>
+                        <ListItemDecorator>
+                          <CodeOutlined aria-labelledby="Code icon" />
+                        </ListItemDecorator>
+                        Front End
+                      </Tab>
+                      <Tab disableIndicator>
+                        <ListItemDecorator>
+                          <SchoolOutlined aria-labelledby="School icon" />
+                        </ListItemDecorator>
+                        Back End
+                      </Tab>
+                      <Tab disableIndicator>
+                        <ListItemDecorator>
+                          <BusinessCenterOutlined aria-labelledby="Business center icon" />
+                        </ListItemDecorator>
+                        Tools
+                      </Tab>
+                    </TabList>
+
+                    {/* Front End */}
+                    <TabPanel value={0}>
+                      <div className="flex flex-col gap-8">
+                        <Card variant="solid">
+                          <CardContent>
+                            <ul className="flex flex-col gap-2">
+                              {Object.keys(ICON_IMAGE_PATHS_FE).map((key) => (
+                                <li
+                                  className="flex flex-col items-center gap-2"
+                                  key={key}
+                                >
+                                  <IconImage
+                                    src={ICON_IMAGE_PATHS_FE[key]}
+                                    alt={key}
+                                  />
+                                  {key}
+                                </li>
+                              ))}
+                            </ul>
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </TabPanel>
+
+                    {/* Back End */}
+                    <TabPanel value={1}>
+                      <div className="flex flex-col gap-8">
+                        <Card variant="solid">
+                          <CardContent>
+                            <ul className="flex flex-col gap-2">
+                              {Object.keys(ICON_IMAGE_PATHS_BE).map((key) => (
+                                <li
+                                  className="flex flex-col items-center gap-2"
+                                  key={key}
+                                >
+                                  <IconImage
+                                    src={ICON_IMAGE_PATHS_BE[key]}
+                                    alt={key}
+                                  />
+                                  {key}
+                                </li>
+                              ))}
+                            </ul>
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </TabPanel>
+
+                    {/* Tools */}
+                    <TabPanel value={2}>
+                      <div className="flex flex-col gap-8">
+                        <Card variant="solid">
+                          <CardContent>
+                            <ul className="flex flex-col gap-2">
+                              {Object.keys(ICON_IMAGE_PATHS_TOOLS).map(
+                                (key) => (
+                                  <li
+                                    className="flex flex-col items-center gap-2"
+                                    key={key}
+                                  >
+                                    <IconImage
+                                      src={ICON_IMAGE_PATHS_TOOLS[key]}
+                                      alt={key}
+                                    />
+                                    {key}
+                                  </li>
+                                )
+                              )}
+                            </ul>
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </TabPanel>
+                  </Tabs>
                 </CardContent>
               </Card>
 
