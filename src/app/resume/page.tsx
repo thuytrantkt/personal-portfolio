@@ -226,7 +226,7 @@ export default function Resume() {
                   <Tabs
                     aria-label="Skills content tabs"
                     defaultValue={0}
-                    sx={{ bgcolor: "transparent", marginTop: "64px" }}
+                    sx={{ bgcolor: "transparent", marginTop: "48px" }}
                     value={activeTabOnSkills}
                     onChange={(event, value) =>
                       setActiveTabOnSkills(value as number)
@@ -348,52 +348,66 @@ export default function Resume() {
 
               <Card variant="solid">
                 <CardContent>
-                  <Typography level="title-lg" textColor="inherit">
+                  <Typography
+                    level="title-lg"
+                    textColor="inherit"
+                    sx={{ paddingBottom: 5 }}
+                  >
                     Soft Skills
                   </Typography>
-                  <ul>
-                    <li>
-                      <Typography level="title-lg" textColor="inherit">
-                        Problem Solving
-                      </Typography>
-                      <Typography textColor="inherit">
-                        Analytical approach to complex technical challenges
-                      </Typography>
-                    </li>
-                    <li>
-                      <Typography level="title-lg" textColor="inherit">
-                        Communication
-                      </Typography>
-                      <Typography textColor="inherit">
-                        Clear technical and non-technical communication
-                      </Typography>
-                    </li>
-                    <li>
-                      <Typography level="title-lg" textColor="inherit">
-                        Team Collaboration
-                      </Typography>
-                      <Typography textColor="inherit">
-                        Effective work in cross-functional teams
-                      </Typography>
-                    </li>
-                    <li>Leadership</li>
-                    <li>
-                      <Typography level="title-lg" textColor="inherit">
-                        Time Management
-                      </Typography>
-                      <Typography textColor="inherit">
-                        Efficient project delivery within deadlines
-                      </Typography>
-                    </li>
-                    <li>
-                      <Typography level="title-lg" textColor="inherit">
-                        Critical Thinking
-                      </Typography>
-                      <Typography textColor="inherit">
-                        Analytical evaluation of solutions and approaches
-                      </Typography>
-                    </li>
-                  </ul>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <Card>
+                      <CardContent>
+                        <Typography level="title-lg" textColor="inherit">
+                          Problem Solving
+                        </Typography>
+                        <Typography textColor="inherit">
+                          Analytical approach to complex technical challenges
+                        </Typography>
+                      </CardContent>
+                    </Card>
+
+                    <Card>
+                      <CardContent>
+                        <Typography level="title-lg" textColor="inherit">
+                          Communication
+                        </Typography>
+                        <Typography textColor="inherit">
+                          Clear technical and non-technical communication
+                        </Typography>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent>
+                        <Typography level="title-lg" textColor="inherit">
+                          Team Collaboration
+                        </Typography>
+                        <Typography textColor="inherit">
+                          Effective work in cross-functional teams
+                        </Typography>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent>
+                        <Typography level="title-lg" textColor="inherit">
+                          Time Management
+                        </Typography>
+                        <Typography textColor="inherit">
+                          Efficient project delivery within deadlines
+                        </Typography>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent>
+                        <Typography level="title-lg" textColor="inherit">
+                          Critical Thinking
+                        </Typography>
+                        <Typography textColor="inherit">
+                          Analytical evaluation of solutions and approaches
+                        </Typography>
+                      </CardContent>
+                    </Card>
+                  </div>
                 </CardContent>
               </Card>
             </div>
