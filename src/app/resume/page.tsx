@@ -25,7 +25,6 @@ import {
   ListItem,
 } from "@mui/joy";
 import Hero from "components/Hero/Hero";
-import Image from "next/image";
 import {
   ICON_IMAGE_PATHS_BE,
   ICON_IMAGE_PATHS_FE,
@@ -41,6 +40,8 @@ export default function Resume() {
   >("");
   const [activeTabOnResume, setActiveTabOnResume] = useState<number>(0);
   const [activeTabOnSkills, setActiveTabOnSkills] = useState<number>(0);
+
+  console.log(Object.keys(ICON_IMAGE_PATHS_FE).sort());
 
   const handleDownloadResumeClick = async (
     event: React.MouseEvent<HTMLAnchorElement>,
@@ -272,13 +273,14 @@ export default function Resume() {
 
                     {/* Front End */}
                     <TabPanel value={0}>
-                      <div className="flex flex-col gap-8">
-                        <Card variant="solid">
-                          <CardContent>
-                            <ul className="flex flex-col gap-2">
-                              {Object.keys(ICON_IMAGE_PATHS_FE).map((key) => (
+                      <Card variant="solid">
+                        <CardContent>
+                          <ul className="flex justify-center lg:justify-between gap-8 xl:px-30 py-6 flex-wrap">
+                            {Object.keys(ICON_IMAGE_PATHS_FE)
+                              .sort()
+                              .map((key) => (
                                 <li
-                                  className="flex flex-col items-center gap-2"
+                                  className="flex flex-col items-center gap-3 w-20"
                                   key={key}
                                 >
                                   <IconImage
@@ -288,21 +290,21 @@ export default function Resume() {
                                   {key}
                                 </li>
                               ))}
-                            </ul>
-                          </CardContent>
-                        </Card>
-                      </div>
+                          </ul>
+                        </CardContent>
+                      </Card>
                     </TabPanel>
 
                     {/* Back End */}
                     <TabPanel value={1}>
-                      <div className="flex flex-col gap-8">
-                        <Card variant="solid">
-                          <CardContent>
-                            <ul className="flex flex-col gap-2">
-                              {Object.keys(ICON_IMAGE_PATHS_BE).map((key) => (
+                      <Card variant="solid">
+                        <CardContent>
+                          <ul className="flex justify-center lg:justify-between gap-8 xl:px-30 py-6 flex-wrap">
+                            {Object.keys(ICON_IMAGE_PATHS_BE)
+                              .sort()
+                              .map((key) => (
                                 <li
-                                  className="flex flex-col items-center gap-2"
+                                  className="flex flex-col items-center gap-3 w-20"
                                   key={key}
                                 >
                                   <IconImage
@@ -312,36 +314,33 @@ export default function Resume() {
                                   {key}
                                 </li>
                               ))}
-                            </ul>
-                          </CardContent>
-                        </Card>
-                      </div>
+                          </ul>
+                        </CardContent>
+                      </Card>
                     </TabPanel>
 
                     {/* Tools */}
                     <TabPanel value={2}>
-                      <div className="flex flex-col gap-8">
-                        <Card variant="solid">
-                          <CardContent>
-                            <ul className="flex flex-col gap-2">
-                              {Object.keys(ICON_IMAGE_PATHS_TOOLS).map(
-                                (key) => (
-                                  <li
-                                    className="flex flex-col items-center gap-2"
-                                    key={key}
-                                  >
-                                    <IconImage
-                                      src={ICON_IMAGE_PATHS_TOOLS[key]}
-                                      alt={key}
-                                    />
-                                    {key}
-                                  </li>
-                                )
-                              )}
-                            </ul>
-                          </CardContent>
-                        </Card>
-                      </div>
+                      <Card variant="solid">
+                        <CardContent>
+                          <ul className="flex flex-wrap justify-center gap-8 lg:grid lg:grid-cols-[var(--academic-grid-cols-4)] lg:justify-items-center xl:px-30 py-6">
+                            {Object.keys(ICON_IMAGE_PATHS_TOOLS)
+                              .sort()
+                              .map((key) => (
+                                <li
+                                  className="flex flex-col items-center gap-3 w-20"
+                                  key={key}
+                                >
+                                  <IconImage
+                                    src={ICON_IMAGE_PATHS_TOOLS[key]}
+                                    alt={key}
+                                  />
+                                  <p className="text-center">{key}</p>
+                                </li>
+                              ))}
+                          </ul>
+                        </CardContent>
+                      </Card>
                     </TabPanel>
                   </Tabs>
                 </CardContent>
