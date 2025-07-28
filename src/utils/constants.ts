@@ -13,7 +13,6 @@ export const BREAKPOINTS = {
 export const NAVOGATION_LIST_ITEMS = [
   { name: "home", href: "/" },
   { name: "about", href: "/about" },
-  { name: "academics", href: "/academics" },
   { name: "projects", href: "/projects" },
   { name: "resume", href: "/resume" },
   { name: "contact", href: "/contact" },
